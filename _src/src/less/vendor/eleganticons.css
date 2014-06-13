@@ -1,0 +1,1159 @@
+@font-face {
+	font-family: 'ElegantIcons';
+	src:url('../fonts/ElegantIcons.eot');
+	src:url('../fonts/ElegantIcons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ElegantIcons.woff') format('woff'),
+		url('../fonts/ElegantIcons.ttf') format('truetype'),
+		url('../fonts/ElegantIcons.svg#ElegantIcons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'ElegantIcons';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="your-class-prefix"] {
+*/
+.arrow_up, .arrow_down, .arrow_left, .arrow_right, .arrow_left-up, .arrow_right-up, .arrow_right-down, .arrow_left-down, .arrow-up-down, .arrow_up-down_alt, .arrow_left-right_alt, .arrow_left-right, .arrow_expand_alt2, .arrow_expand_alt, .arrow_condense, .arrow_expand, .arrow_move, .arrow_carrot-up, .arrow_carrot-down, .arrow_carrot-left, .arrow_carrot-right, .arrow_carrot-2up, .arrow_carrot-2down, .arrow_carrot-2left, .arrow_carrot-2right, .arrow_carrot-up_alt2, .arrow_carrot-down_alt2, .arrow_carrot-left_alt2, .arrow_carrot-right_alt2, .arrow_carrot-2up_alt2, .arrow_carrot-2down_alt2, .arrow_carrot-2left_alt2, .arrow_carrot-2right_alt2, .arrow_triangle-up, .arrow_triangle-down, .arrow_triangle-left, .arrow_triangle-right, .arrow_triangle-up_alt2, .arrow_triangle-down_alt2, .arrow_triangle-left_alt2, .arrow_triangle-right_alt2, .arrow_back, .eleganticon_minus-06, .eleganticon_plus, .eleganticon_close, .eleganticon_check, .eleganticon_minus_alt2, .eleganticon_plus_alt2, .eleganticon_close_alt2, .eleganticon_check_alt2, .eleganticon_zoom-out_alt, .eleganticon_zoom-in_alt, .eleganticon_search, .eleganticon_box-empty, .eleganticon_box-selected, .eleganticon_minus-box, .eleganticon_plus-box, .eleganticon_box-checked, .eleganticon_circle-empty, .eleganticon_circle-slelected, .eleganticon_stop_alt2, .eleganticon_stop, .eleganticon_pause_alt2, .eleganticon_pause, .eleganticon_menu, .eleganticon_menu-square_alt2, .eleganticon_menu-circle_alt2, .eleganticon_ul, .eleganticon_ol, .eleganticon_adjust-horiz, .eleganticon_adjust-vert, .eleganticon_document_alt, .eleganticon_documents_alt, .eleganticon_pencil, .eleganticon_pencil-edit_alt, .eleganticon_pencil-edit, .eleganticon_folder-alt, .eleganticon_folder-open_alt, .eleganticon_folder-add_alt, .eleganticon_info_alt, .eleganticon_error-oct_alt, .eleganticon_error-circle_alt, .eleganticon_error-triangle_alt, .eleganticon_question_alt2, .eleganticon_question, .eleganticon_comment_alt, .eleganticon_chat_alt, .eleganticon_vol-mute_alt, .eleganticon_volume-low_alt, .eleganticon_volume-high_alt, .eleganticon_quotations, .eleganticon_quotations_alt2, .eleganticon_clock_alt, .eleganticon_lock_alt, .eleganticon_lock-open_alt, .eleganticon_key_alt, .eleganticon_cloud_alt, .eleganticon_cloud-upload_alt, .eleganticon_cloud-download_alt, .eleganticon_image, .eleganticon_images, .eleganticon_lightbulb_alt, .eleganticon_gift_alt, .eleganticon_house_alt, .eleganticon_genius, .eleganticon_mobile, .eleganticon_tablet, .eleganticon_laptop, .eleganticon_desktop, .eleganticon_camera_alt, .eleganticon_mail_alt, .eleganticon_cone_alt, .eleganticon_ribbon_alt, .eleganticon_bag_alt, .eleganticon_creditcard, .eleganticon_cart_alt, .eleganticon_paperclip, .eleganticon_tag_alt, .eleganticon_tags_alt, .eleganticon_trash_alt, .eleganticon_cursor_alt, .eleganticon_mic_alt, .eleganticon_compass_alt, .eleganticon_pin_alt, .eleganticon_pushpin_alt, .eleganticon_map_alt, .eleganticon_drawer_alt, .eleganticon_toolbox_alt, .eleganticon_book_alt, .eleganticon_calendar, .eleganticon_film, .eleganticon_table, .eleganticon_contacts_alt, .eleganticon_headphones, .eleganticon_lifesaver, .eleganticon_piechart, .eleganticon_refresh, .eleganticon_link_alt, .eleganticon_link, .eleganticon_loading, .eleganticon_blocked, .eleganticon_archive_alt, .eleganticon_heart_alt, .eleganticon_star_alt, .eleganticon_star-half_alt, .eleganticon_star, .eleganticon_star-half, .eleganticon_tools, .eleganticon_tool, .eleganticon_cog, .eleganticon_cogs, .arrow_up_alt, .arrow_down_alt, .arrow_left_alt, .arrow_right_alt, .arrow_left-up_alt, .arrow_right-up_alt, .arrow_right-down_alt, .arrow_left-down_alt, .arrow_condense_alt, .arrow_expand_alt3, .arrow_carrot_up_alt, .arrow_carrot-down_alt, .arrow_carrot-left_alt, .arrow_carrot-right_alt, .arrow_carrot-2up_alt, .arrow_carrot-2dwnn_alt, .arrow_carrot-2left_alt, .arrow_carrot-2right_alt, .arrow_triangle-up_alt, .arrow_triangle-down_alt, .arrow_triangle-left_alt, .arrow_triangle-right_alt, .eleganticon_minus_alt, .eleganticon_plus_alt, .eleganticon_close_alt, .eleganticon_check_alt, .eleganticon_zoom-out, .eleganticon_zoom-in, .eleganticon_stop_alt, .eleganticon_menu-square_alt, .eleganticon_menu-circle_alt, .eleganticon_document, .eleganticon_documents, .eleganticon_pencil_alt, .eleganticon_folder, .eleganticon_folder-open, .eleganticon_folder-add, .eleganticon_folder_upload, .eleganticon_folder_download, .eleganticon_info, .eleganticon_error-circle, .eleganticon_error-oct, .eleganticon_error-triangle, .eleganticon_question_alt, .eleganticon_comment, .eleganticon_chat, .eleganticon_vol-mute, .eleganticon_volume-low, .eleganticon_volume-high, .eleganticon_quotations_alt, .eleganticon_clock, .eleganticon_lock, .eleganticon_lock-open, .eleganticon_key, .eleganticon_cloud, .eleganticon_cloud-upload, .eleganticon_cloud-download, .eleganticon_lightbulb, .eleganticon_gift, .eleganticon_house, .eleganticon_camera, .eleganticon_mail, .eleganticon_cone, .eleganticon_ribbon, .eleganticon_bag, .eleganticon_cart, .eleganticon_tag, .eleganticon_tags, .eleganticon_trash, .eleganticon_cursor, .eleganticon_mic, .eleganticon_compass, .eleganticon_pin, .eleganticon_pushpin, .eleganticon_map, .eleganticon_drawer, .eleganticon_toolbox, .eleganticon_book, .eleganticon_contacts, .eleganticon_archive, .eleganticon_heart, .eleganticon_profile, .eleganticon_group, .eleganticon_grid-2x2, .eleganticon_grid-3x3, .eleganticon_music, .eleganticon_pause_alt, .eleganticon_phone, .eleganticon_upload, .eleganticon_download, .social_facebook, .social_twitter, .social_pinterest, .social_googleplus, .social_tumblr, .social_tumbleupon, .social_wordpress, .social_instagram, .social_dribbble, .social_vimeo, .social_linkedin, .social_rss, .social_deviantart, .social_share, .social_myspace, .social_skype, .social_youtube, .social_picassa, .social_googledrive, .social_flickr, .social_blogger, .social_spotify, .social_delicious, .social_facebook_circle, .social_twitter_circle, .social_pinterest_circle, .social_googleplus_circle, .social_tumblr_circle, .social_stumbleupon_circle, .social_wordpress_circle, .social_instagram_circle, .social_dribbble_circle, .social_vimeo_circle, .social_linkedin_circle, .social_rss_circle, .social_deviantart_circle, .social_share_circle, .social_myspace_circle, .social_skype_circle, .social_youtube_circle, .social_picassa_circle, .social_googledrive_alt2, .social_flickr_circle, .social_blogger_circle, .social_spotify_circle, .social_delicious_circle, .social_facebook_square, .social_twitter_square, .social_pinterest_square, .social_googleplus_square, .social_tumblr_square, .social_stumbleupon_square, .social_wordpress_square, .social_instagram_square, .social_dribbble_square, .social_vimeo_square, .social_linkedin_square, .social_rss_square, .social_deviantart_square, .social_share_square, .social_myspace_square, .social_skype_square, .social_youtube_square, .social_picassa_square, .social_googledrive_square, .social_flickr_square, .social_blogger_square, .social_spotify_square, .social_delicious_square, .eleganticon_printer, .eleganticon_calulator, .eleganticon_building, .eleganticon_floppy, .eleganticon_drive, .eleganticon_search-2, .eleganticon_id, .eleganticon_id-2, .eleganticon_puzzle, .eleganticon_like, .eleganticon_dislike, .eleganticon_mug, .eleganticon_currency, .eleganticon_wallet, .eleganticon_pens, .eleganticon_easel, .eleganticon_flowchart, .eleganticon_datareport, .eleganticon_briefcase, .eleganticon_shield, .eleganticon_percent, .eleganticon_globe, .eleganticon_globe-2, .eleganticon_target, .eleganticon_hourglass, .eleganticon_balance, .eleganticon_rook, .eleganticon_printer-alt, .eleganticon_calculator_alt, .eleganticon_building_alt, .eleganticon_floppy_alt, .eleganticon_drive_alt, .eleganticon_search_alt, .eleganticon_id_alt, .eleganticon_id-2_alt, .eleganticon_puzzle_alt, .eleganticon_like_alt, .eleganticon_dislike_alt, .eleganticon_mug_alt, .eleganticon_currency_alt, .eleganticon_wallet_alt, .eleganticon_pens_alt, .eleganticon_easel_alt, .eleganticon_flowchart_alt, .eleganticon_datareport_alt, .eleganticon_briefcase_alt, .eleganticon_shield_alt, .eleganticon_percent_alt, .eleganticon_globe_alt, .eleganticon_clipboard {
+	font-family: 'ElegantIcons';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.arrow_up:before {
+	content: "\21";
+}
+.arrow_down:before {
+	content: "\22";
+}
+.arrow_left:before {
+	content: "\23";
+}
+.arrow_right:before {
+	content: "\24";
+}
+.arrow_left-up:before {
+	content: "\25";
+}
+.arrow_right-up:before {
+	content: "\26";
+}
+.arrow_right-down:before {
+	content: "\27";
+}
+.arrow_left-down:before {
+	content: "\28";
+}
+.arrow-up-down:before {
+	content: "\29";
+}
+.arrow_up-down_alt:before {
+	content: "\2a";
+}
+.arrow_left-right_alt:before {
+	content: "\2b";
+}
+.arrow_left-right:before {
+	content: "\2c";
+}
+.arrow_expand_alt2:before {
+	content: "\2d";
+}
+.arrow_expand_alt:before {
+	content: "\2e";
+}
+.arrow_condense:before {
+	content: "\2f";
+}
+.arrow_expand:before {
+	content: "\30";
+}
+.arrow_move:before {
+	content: "\31";
+}
+.arrow_carrot-up:before {
+	content: "\32";
+}
+.arrow_carrot-down:before {
+	content: "\33";
+}
+.arrow_carrot-left:before {
+	content: "\34";
+}
+.arrow_carrot-right:before {
+	content: "\35";
+}
+.arrow_carrot-2up:before {
+	content: "\36";
+}
+.arrow_carrot-2down:before {
+	content: "\37";
+}
+.arrow_carrot-2left:before {
+	content: "\38";
+}
+.arrow_carrot-2right:before {
+	content: "\39";
+}
+.arrow_carrot-up_alt2:before {
+	content: "\3a";
+}
+.arrow_carrot-down_alt2:before {
+	content: "\3b";
+}
+.arrow_carrot-left_alt2:before {
+	content: "\3c";
+}
+.arrow_carrot-right_alt2:before {
+	content: "\3d";
+}
+.arrow_carrot-2up_alt2:before {
+	content: "\3e";
+}
+.arrow_carrot-2down_alt2:before {
+	content: "\3f";
+}
+.arrow_carrot-2left_alt2:before {
+	content: "\40";
+}
+.arrow_carrot-2right_alt2:before {
+	content: "\41";
+}
+.arrow_triangle-up:before {
+	content: "\42";
+}
+.arrow_triangle-down:before {
+	content: "\43";
+}
+.arrow_triangle-left:before {
+	content: "\44";
+}
+.arrow_triangle-right:before {
+	content: "\45";
+}
+.arrow_triangle-up_alt2:before {
+	content: "\46";
+}
+.arrow_triangle-down_alt2:before {
+	content: "\47";
+}
+.arrow_triangle-left_alt2:before {
+	content: "\48";
+}
+.arrow_triangle-right_alt2:before {
+	content: "\49";
+}
+.arrow_back:before {
+	content: "\4a";
+}
+.eleganticon_minus-06:before {
+	content: "\4b";
+}
+.eleganticon_plus:before {
+	content: "\4c";
+}
+.eleganticon_close:before {
+	content: "\4d";
+}
+.eleganticon_check:before {
+	content: "\4e";
+}
+.eleganticon_minus_alt2:before {
+	content: "\4f";
+}
+.eleganticon_plus_alt2:before {
+	content: "\50";
+}
+.eleganticon_close_alt2:before {
+	content: "\51";
+}
+.eleganticon_check_alt2:before {
+	content: "\52";
+}
+.eleganticon_zoom-out_alt:before {
+	content: "\53";
+}
+.eleganticon_zoom-in_alt:before {
+	content: "\54";
+}
+.eleganticon_search:before {
+	content: "\55";
+}
+.eleganticon_box-empty:before {
+	content: "\56";
+}
+.eleganticon_box-selected:before {
+	content: "\57";
+}
+.eleganticon_minus-box:before {
+	content: "\58";
+}
+.eleganticon_plus-box:before {
+	content: "\59";
+}
+.eleganticon_box-checked:before {
+	content: "\5a";
+}
+.eleganticon_circle-empty:before {
+	content: "\5b";
+}
+.eleganticon_circle-slelected:before {
+	content: "\5c";
+}
+.eleganticon_stop_alt2:before {
+	content: "\5d";
+}
+.eleganticon_stop:before {
+	content: "\5e";
+}
+.eleganticon_pause_alt2:before {
+	content: "\5f";
+}
+.eleganticon_pause:before {
+	content: "\60";
+}
+.eleganticon_menu:before {
+	content: "\61";
+}
+.eleganticon_menu-square_alt2:before {
+	content: "\62";
+}
+.eleganticon_menu-circle_alt2:before {
+	content: "\63";
+}
+.eleganticon_ul:before {
+	content: "\64";
+}
+.eleganticon_ol:before {
+	content: "\65";
+}
+.eleganticon_adjust-horiz:before {
+	content: "\66";
+}
+.eleganticon_adjust-vert:before {
+	content: "\67";
+}
+.eleganticon_document_alt:before {
+	content: "\68";
+}
+.eleganticon_documents_alt:before {
+	content: "\69";
+}
+.eleganticon_pencil:before {
+	content: "\6a";
+}
+.eleganticon_pencil-edit_alt:before {
+	content: "\6b";
+}
+.eleganticon_pencil-edit:before {
+	content: "\6c";
+}
+.eleganticon_folder-alt:before {
+	content: "\6d";
+}
+.eleganticon_folder-open_alt:before {
+	content: "\6e";
+}
+.eleganticon_folder-add_alt:before {
+	content: "\6f";
+}
+.eleganticon_info_alt:before {
+	content: "\70";
+}
+.eleganticon_error-oct_alt:before {
+	content: "\71";
+}
+.eleganticon_error-circle_alt:before {
+	content: "\72";
+}
+.eleganticon_error-triangle_alt:before {
+	content: "\73";
+}
+.eleganticon_question_alt2:before {
+	content: "\74";
+}
+.eleganticon_question:before {
+	content: "\75";
+}
+.eleganticon_comment_alt:before {
+	content: "\76";
+}
+.eleganticon_chat_alt:before {
+	content: "\77";
+}
+.eleganticon_vol-mute_alt:before {
+	content: "\78";
+}
+.eleganticon_volume-low_alt:before {
+	content: "\79";
+}
+.eleganticon_volume-high_alt:before {
+	content: "\7a";
+}
+.eleganticon_quotations:before {
+	content: "\7b";
+}
+.eleganticon_quotations_alt2:before {
+	content: "\7c";
+}
+.eleganticon_clock_alt:before {
+	content: "\7d";
+}
+.eleganticon_lock_alt:before {
+	content: "\7e";
+}
+.eleganticon_lock-open_alt:before {
+	content: "\e000";
+}
+.eleganticon_key_alt:before {
+	content: "\e001";
+}
+.eleganticon_cloud_alt:before {
+	content: "\e002";
+}
+.eleganticon_cloud-upload_alt:before {
+	content: "\e003";
+}
+.eleganticon_cloud-download_alt:before {
+	content: "\e004";
+}
+.eleganticon_image:before {
+	content: "\e005";
+}
+.eleganticon_images:before {
+	content: "\e006";
+}
+.eleganticon_lightbulb_alt:before {
+	content: "\e007";
+}
+.eleganticon_gift_alt:before {
+	content: "\e008";
+}
+.eleganticon_house_alt:before {
+	content: "\e009";
+}
+.eleganticon_genius:before {
+	content: "\e00a";
+}
+.eleganticon_mobile:before {
+	content: "\e00b";
+}
+.eleganticon_tablet:before {
+	content: "\e00c";
+}
+.eleganticon_laptop:before {
+	content: "\e00d";
+}
+.eleganticon_desktop:before {
+	content: "\e00e";
+}
+.eleganticon_camera_alt:before {
+	content: "\e00f";
+}
+.eleganticon_mail_alt:before {
+	content: "\e010";
+}
+.eleganticon_cone_alt:before {
+	content: "\e011";
+}
+.eleganticon_ribbon_alt:before {
+	content: "\e012";
+}
+.eleganticon_bag_alt:before {
+	content: "\e013";
+}
+.eleganticon_creditcard:before {
+	content: "\e014";
+}
+.eleganticon_cart_alt:before {
+	content: "\e015";
+}
+.eleganticon_paperclip:before {
+	content: "\e016";
+}
+.eleganticon_tag_alt:before {
+	content: "\e017";
+}
+.eleganticon_tags_alt:before {
+	content: "\e018";
+}
+.eleganticon_trash_alt:before {
+	content: "\e019";
+}
+.eleganticon_cursor_alt:before {
+	content: "\e01a";
+}
+.eleganticon_mic_alt:before {
+	content: "\e01b";
+}
+.eleganticon_compass_alt:before {
+	content: "\e01c";
+}
+.eleganticon_pin_alt:before {
+	content: "\e01d";
+}
+.eleganticon_pushpin_alt:before {
+	content: "\e01e";
+}
+.eleganticon_map_alt:before {
+	content: "\e01f";
+}
+.eleganticon_drawer_alt:before {
+	content: "\e020";
+}
+.eleganticon_toolbox_alt:before {
+	content: "\e021";
+}
+.eleganticon_book_alt:before {
+	content: "\e022";
+}
+.eleganticon_calendar:before {
+	content: "\e023";
+}
+.eleganticon_film:before {
+	content: "\e024";
+}
+.eleganticon_table:before {
+	content: "\e025";
+}
+.eleganticon_contacts_alt:before {
+	content: "\e026";
+}
+.eleganticon_headphones:before {
+	content: "\e027";
+}
+.eleganticon_lifesaver:before {
+	content: "\e028";
+}
+.eleganticon_piechart:before {
+	content: "\e029";
+}
+.eleganticon_refresh:before {
+	content: "\e02a";
+}
+.eleganticon_link_alt:before {
+	content: "\e02b";
+}
+.eleganticon_link:before {
+	content: "\e02c";
+}
+.eleganticon_loading:before {
+	content: "\e02d";
+}
+.eleganticon_blocked:before {
+	content: "\e02e";
+}
+.eleganticon_archive_alt:before {
+	content: "\e02f";
+}
+.eleganticon_heart_alt:before {
+	content: "\e030";
+}
+.eleganticon_star_alt:before {
+	content: "\e031";
+}
+.eleganticon_star-half_alt:before {
+	content: "\e032";
+}
+.eleganticon_star:before {
+	content: "\e033";
+}
+.eleganticon_star-half:before {
+	content: "\e034";
+}
+.eleganticon_tools:before {
+	content: "\e035";
+}
+.eleganticon_tool:before {
+	content: "\e036";
+}
+.eleganticon_cog:before {
+	content: "\e037";
+}
+.eleganticon_cogs:before {
+	content: "\e038";
+}
+.arrow_up_alt:before {
+	content: "\e039";
+}
+.arrow_down_alt:before {
+	content: "\e03a";
+}
+.arrow_left_alt:before {
+	content: "\e03b";
+}
+.arrow_right_alt:before {
+	content: "\e03c";
+}
+.arrow_left-up_alt:before {
+	content: "\e03d";
+}
+.arrow_right-up_alt:before {
+	content: "\e03e";
+}
+.arrow_right-down_alt:before {
+	content: "\e03f";
+}
+.arrow_left-down_alt:before {
+	content: "\e040";
+}
+.arrow_condense_alt:before {
+	content: "\e041";
+}
+.arrow_expand_alt3:before {
+	content: "\e042";
+}
+.arrow_carrot_up_alt:before {
+	content: "\e043";
+}
+.arrow_carrot-down_alt:before {
+	content: "\e044";
+}
+.arrow_carrot-left_alt:before {
+	content: "\e045";
+}
+.arrow_carrot-right_alt:before {
+	content: "\e046";
+}
+.arrow_carrot-2up_alt:before {
+	content: "\e047";
+}
+.arrow_carrot-2dwnn_alt:before {
+	content: "\e048";
+}
+.arrow_carrot-2left_alt:before {
+	content: "\e049";
+}
+.arrow_carrot-2right_alt:before {
+	content: "\e04a";
+}
+.arrow_triangle-up_alt:before {
+	content: "\e04b";
+}
+.arrow_triangle-down_alt:before {
+	content: "\e04c";
+}
+.arrow_triangle-left_alt:before {
+	content: "\e04d";
+}
+.arrow_triangle-right_alt:before {
+	content: "\e04e";
+}
+.eleganticon_minus_alt:before {
+	content: "\e04f";
+}
+.eleganticon_plus_alt:before {
+	content: "\e050";
+}
+.eleganticon_close_alt:before {
+	content: "\e051";
+}
+.eleganticon_check_alt:before {
+	content: "\e052";
+}
+.eleganticon_zoom-out:before {
+	content: "\e053";
+}
+.eleganticon_zoom-in:before {
+	content: "\e054";
+}
+.eleganticon_stop_alt:before {
+	content: "\e055";
+}
+.eleganticon_menu-square_alt:before {
+	content: "\e056";
+}
+.eleganticon_menu-circle_alt:before {
+	content: "\e057";
+}
+.eleganticon_document:before {
+	content: "\e058";
+}
+.eleganticon_documents:before {
+	content: "\e059";
+}
+.eleganticon_pencil_alt:before {
+	content: "\e05a";
+}
+.eleganticon_folder:before {
+	content: "\e05b";
+}
+.eleganticon_folder-open:before {
+	content: "\e05c";
+}
+.eleganticon_folder-add:before {
+	content: "\e05d";
+}
+.eleganticon_folder_upload:before {
+	content: "\e05e";
+}
+.eleganticon_folder_download:before {
+	content: "\e05f";
+}
+.eleganticon_info:before {
+	content: "\e060";
+}
+.eleganticon_error-circle:before {
+	content: "\e061";
+}
+.eleganticon_error-oct:before {
+	content: "\e062";
+}
+.eleganticon_error-triangle:before {
+	content: "\e063";
+}
+.eleganticon_question_alt:before {
+	content: "\e064";
+}
+.eleganticon_comment:before {
+	content: "\e065";
+}
+.eleganticon_chat:before {
+	content: "\e066";
+}
+.eleganticon_vol-mute:before {
+	content: "\e067";
+}
+.eleganticon_volume-low:before {
+	content: "\e068";
+}
+.eleganticon_volume-high:before {
+	content: "\e069";
+}
+.eleganticon_quotations_alt:before {
+	content: "\e06a";
+}
+.eleganticon_clock:before {
+	content: "\e06b";
+}
+.eleganticon_lock:before {
+	content: "\e06c";
+}
+.eleganticon_lock-open:before {
+	content: "\e06d";
+}
+.eleganticon_key:before {
+	content: "\e06e";
+}
+.eleganticon_cloud:before {
+	content: "\e06f";
+}
+.eleganticon_cloud-upload:before {
+	content: "\e070";
+}
+.eleganticon_cloud-download:before {
+	content: "\e071";
+}
+.eleganticon_lightbulb:before {
+	content: "\e072";
+}
+.eleganticon_gift:before {
+	content: "\e073";
+}
+.eleganticon_house:before {
+	content: "\e074";
+}
+.eleganticon_camera:before {
+	content: "\e075";
+}
+.eleganticon_mail:before {
+	content: "\e076";
+}
+.eleganticon_cone:before {
+	content: "\e077";
+}
+.eleganticon_ribbon:before {
+	content: "\e078";
+}
+.eleganticon_bag:before {
+	content: "\e079";
+}
+.eleganticon_cart:before {
+	content: "\e07a";
+}
+.eleganticon_tag:before {
+	content: "\e07b";
+}
+.eleganticon_tags:before {
+	content: "\e07c";
+}
+.eleganticon_trash:before {
+	content: "\e07d";
+}
+.eleganticon_cursor:before {
+	content: "\e07e";
+}
+.eleganticon_mic:before {
+	content: "\e07f";
+}
+.eleganticon_compass:before {
+	content: "\e080";
+}
+.eleganticon_pin:before {
+	content: "\e081";
+}
+.eleganticon_pushpin:before {
+	content: "\e082";
+}
+.eleganticon_map:before {
+	content: "\e083";
+}
+.eleganticon_drawer:before {
+	content: "\e084";
+}
+.eleganticon_toolbox:before {
+	content: "\e085";
+}
+.eleganticon_book:before {
+	content: "\e086";
+}
+.eleganticon_contacts:before {
+	content: "\e087";
+}
+.eleganticon_archive:before {
+	content: "\e088";
+}
+.eleganticon_heart:before {
+	content: "\e089";
+}
+.eleganticon_profile:before {
+	content: "\e08a";
+}
+.eleganticon_group:before {
+	content: "\e08b";
+}
+.eleganticon_grid-2x2:before {
+	content: "\e08c";
+}
+.eleganticon_grid-3x3:before {
+	content: "\e08d";
+}
+.eleganticon_music:before {
+	content: "\e08e";
+}
+.eleganticon_pause_alt:before {
+	content: "\e08f";
+}
+.eleganticon_phone:before {
+	content: "\e090";
+}
+.eleganticon_upload:before {
+	content: "\e091";
+}
+.eleganticon_download:before {
+	content: "\e092";
+}
+.social_facebook:before {
+	content: "\e093";
+}
+.social_twitter:before {
+	content: "\e094";
+}
+.social_pinterest:before {
+	content: "\e095";
+}
+.social_googleplus:before {
+	content: "\e096";
+}
+.social_tumblr:before {
+	content: "\e097";
+}
+.social_tumbleupon:before {
+	content: "\e098";
+}
+.social_wordpress:before {
+	content: "\e099";
+}
+.social_instagram:before {
+	content: "\e09a";
+}
+.social_dribbble:before {
+	content: "\e09b";
+}
+.social_vimeo:before {
+	content: "\e09c";
+}
+.social_linkedin:before {
+	content: "\e09d";
+}
+.social_rss:before {
+	content: "\e09e";
+}
+.social_deviantart:before {
+	content: "\e09f";
+}
+.social_share:before {
+	content: "\e0a0";
+}
+.social_myspace:before {
+	content: "\e0a1";
+}
+.social_skype:before {
+	content: "\e0a2";
+}
+.social_youtube:before {
+	content: "\e0a3";
+}
+.social_picassa:before {
+	content: "\e0a4";
+}
+.social_googledrive:before {
+	content: "\e0a5";
+}
+.social_flickr:before {
+	content: "\e0a6";
+}
+.social_blogger:before {
+	content: "\e0a7";
+}
+.social_spotify:before {
+	content: "\e0a8";
+}
+.social_delicious:before {
+	content: "\e0a9";
+}
+.social_facebook_circle:before {
+	content: "\e0aa";
+}
+.social_twitter_circle:before {
+	content: "\e0ab";
+}
+.social_pinterest_circle:before {
+	content: "\e0ac";
+}
+.social_googleplus_circle:before {
+	content: "\e0ad";
+}
+.social_tumblr_circle:before {
+	content: "\e0ae";
+}
+.social_stumbleupon_circle:before {
+	content: "\e0af";
+}
+.social_wordpress_circle:before {
+	content: "\e0b0";
+}
+.social_instagram_circle:before {
+	content: "\e0b1";
+}
+.social_dribbble_circle:before {
+	content: "\e0b2";
+}
+.social_vimeo_circle:before {
+	content: "\e0b3";
+}
+.social_linkedin_circle:before {
+	content: "\e0b4";
+}
+.social_rss_circle:before {
+	content: "\e0b5";
+}
+.social_deviantart_circle:before {
+	content: "\e0b6";
+}
+.social_share_circle:before {
+	content: "\e0b7";
+}
+.social_myspace_circle:before {
+	content: "\e0b8";
+}
+.social_skype_circle:before {
+	content: "\e0b9";
+}
+.social_youtube_circle:before {
+	content: "\e0ba";
+}
+.social_picassa_circle:before {
+	content: "\e0bb";
+}
+.social_googledrive_alt2:before {
+	content: "\e0bc";
+}
+.social_flickr_circle:before {
+	content: "\e0bd";
+}
+.social_blogger_circle:before {
+	content: "\e0be";
+}
+.social_spotify_circle:before {
+	content: "\e0bf";
+}
+.social_delicious_circle:before {
+	content: "\e0c0";
+}
+.social_facebook_square:before {
+	content: "\e0c1";
+}
+.social_twitter_square:before {
+	content: "\e0c2";
+}
+.social_pinterest_square:before {
+	content: "\e0c3";
+}
+.social_googleplus_square:before {
+	content: "\e0c4";
+}
+.social_tumblr_square:before {
+	content: "\e0c5";
+}
+.social_stumbleupon_square:before {
+	content: "\e0c6";
+}
+.social_wordpress_square:before {
+	content: "\e0c7";
+}
+.social_instagram_square:before {
+	content: "\e0c8";
+}
+.social_dribbble_square:before {
+	content: "\e0c9";
+}
+.social_vimeo_square:before {
+	content: "\e0ca";
+}
+.social_linkedin_square:before {
+	content: "\e0cb";
+}
+.social_rss_square:before {
+	content: "\e0cc";
+}
+.social_deviantart_square:before {
+	content: "\e0cd";
+}
+.social_share_square:before {
+	content: "\e0ce";
+}
+.social_myspace_square:before {
+	content: "\e0cf";
+}
+.social_skype_square:before {
+	content: "\e0d0";
+}
+.social_youtube_square:before {
+	content: "\e0d1";
+}
+.social_picassa_square:before {
+	content: "\e0d2";
+}
+.social_googledrive_square:before {
+	content: "\e0d3";
+}
+.social_flickr_square:before {
+	content: "\e0d4";
+}
+.social_blogger_square:before {
+	content: "\e0d5";
+}
+.social_spotify_square:before {
+	content: "\e0d6";
+}
+.social_delicious_square:before {
+	content: "\e0d7";
+}
+.eleganticon_printer:before {
+	content: "\e103";
+}
+.eleganticon_calulator:before {
+	content: "\e0ee";
+}
+.eleganticon_building:before {
+	content: "\e0ef";
+}
+.eleganticon_floppy:before {
+	content: "\e0e8";
+}
+.eleganticon_drive:before {
+	content: "\e0ea";
+}
+.eleganticon_search-2:before {
+	content: "\e101";
+}
+.eleganticon_id:before {
+	content: "\e107";
+}
+.eleganticon_id-2:before {
+	content: "\e108";
+}
+.eleganticon_puzzle:before {
+	content: "\e102";
+}
+.eleganticon_like:before {
+	content: "\e106";
+}
+.eleganticon_dislike:before {
+	content: "\e0eb";
+}
+.eleganticon_mug:before {
+	content: "\e105";
+}
+.eleganticon_currency:before {
+	content: "\e0ed";
+}
+.eleganticon_wallet:before {
+	content: "\e100";
+}
+.eleganticon_pens:before {
+	content: "\e104";
+}
+.eleganticon_easel:before {
+	content: "\e0e9";
+}
+.eleganticon_flowchart:before {
+	content: "\e109";
+}
+.eleganticon_datareport:before {
+	content: "\e0ec";
+}
+.eleganticon_briefcase:before {
+	content: "\e0fe";
+}
+.eleganticon_shield:before {
+	content: "\e0f6";
+}
+.eleganticon_percent:before {
+	content: "\e0fb";
+}
+.eleganticon_globe:before {
+	content: "\e0e2";
+}
+.eleganticon_globe-2:before {
+	content: "\e0e3";
+}
+.eleganticon_target:before {
+	content: "\e0f5";
+}
+.eleganticon_hourglass:before {
+	content: "\e0e1";
+}
+.eleganticon_balance:before {
+	content: "\e0ff";
+}
+.eleganticon_rook:before {
+	content: "\e0f8";
+}
+.eleganticon_printer-alt:before {
+	content: "\e0fa";
+}
+.eleganticon_calculator_alt:before {
+	content: "\e0e7";
+}
+.eleganticon_building_alt:before {
+	content: "\e0fd";
+}
+.eleganticon_floppy_alt:before {
+	content: "\e0e4";
+}
+.eleganticon_drive_alt:before {
+	content: "\e0e5";
+}
+.eleganticon_search_alt:before {
+	content: "\e0f7";
+}
+.eleganticon_id_alt:before {
+	content: "\e0e0";
+}
+.eleganticon_id-2_alt:before {
+	content: "\e0fc";
+}
+.eleganticon_puzzle_alt:before {
+	content: "\e0f9";
+}
+.eleganticon_like_alt:before {
+	content: "\e0dd";
+}
+.eleganticon_dislike_alt:before {
+	content: "\e0f1";
+}
+.eleganticon_mug_alt:before {
+	content: "\e0dc";
+}
+.eleganticon_currency_alt:before {
+	content: "\e0f3";
+}
+.eleganticon_wallet_alt:before {
+	content: "\e0d8";
+}
+.eleganticon_pens_alt:before {
+	content: "\e0db";
+}
+.eleganticon_easel_alt:before {
+	content: "\e0f0";
+}
+.eleganticon_flowchart_alt:before {
+	content: "\e0df";
+}
+.eleganticon_datareport_alt:before {
+	content: "\e0f2";
+}
+.eleganticon_briefcase_alt:before {
+	content: "\e0f4";
+}
+.eleganticon_shield_alt:before {
+	content: "\e0d9";
+}
+.eleganticon_percent_alt:before {
+	content: "\e0da";
+}
+.eleganticon_globe_alt:before {
+	content: "\e0de";
+}
+.eleganticon_clipboard:before {
+	content: "\e0e6";
+}
+
+
+	.glyph {
+		float: left;
+		text-align: center;
+		padding: .75em;
+		margin: .4em 1.5em .75em 0;
+		width: 6em;
+text-shadow: none;
+	}
+        .glyph_big {
+        font-size: 128px;
+        color: #59c5dc;
+        float: left;
+        margin-right: 20px;
+        }
+
+        .glyph div { padding-bottom: 10px;}
+
+	.glyph input {
+		font-family: consolas, monospace;
+		font-size: 12px;
+		width: 100%;
+		text-align: center;
+		border: 0;
+		box-shadow: 0 0 0 1px #ccc;
+		padding: .2em;
+                -moz-border-radius: 5px;
+                -webkit-border-radius: 5px;
+	}
+	.centered {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.glyph .fs1 {
+		font-size: 2em;
+	}
+
+

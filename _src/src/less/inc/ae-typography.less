@@ -1,0 +1,169 @@
+// -----------------------------------------------------------------
+// * [Text & Typography Styles]
+// *
+// * @project Digboots Wordpress Theme
+// * @version 1.0.0
+// *
+// * @author Dwi A. Hambali <dwi@aestik.com>
+// * @author Pratama H. Salahudin <pratama@aestik.com>
+// -----------------------------------------------------------------
+
+/* [Headings Styles]
+============================================================*/
+/*-----[Global Headings]-----*/
+h1 {
+	margin-top: .4em;
+	margin-bottom: .4em;
+
+	color: @heading-color;
+	font-family: @font-2;
+	font-size: 5.143em;
+	font-weight: 400;
+	line-height: 1.2;
+	text-transform: uppercase;
+
+	transform: translate3d(0, 0, 0);
+	transition: all .8s ease;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: @heading-color;
+	font-family: @font-1;
+	font-weight: 700;
+
+	transform: translate3d(0, 0, 0);
+	transition: all .8s ease;
+	a {
+	}
+}
+
+h2 {
+	margin-top: .5em;
+	margin-bottom: .5em;
+
+	font-size: 2.143em;
+	letter-spacing: -1px;
+}
+
+h3 {
+	margin-top: .3em;
+	margin-bottom: .3em;
+
+	font-size: 1.714em;
+	letter-spacing: -1px;
+}
+
+h4 {
+	margin-top: .3em;
+	margin-bottom: .3em;
+
+	font-size: 1.286em;
+	letter-spacing: -1px;
+}
+
+h5 {
+	margin-top: .3em;
+	margin-bottom: .3em;
+
+	font-size: 1.14em;
+	letter-spacing: -1px;
+}
+
+h6 {
+	margin-top: .3em;
+	margin-bottom: .3em;
+
+	font-size: 1em;
+	letter-spacing: -1px;
+}
+
+/*-----[Section Titles]-----*/
+.section-title {
+	border-bottom: 1px solid @separator-color;
+	display: block;
+
+	margin-bottom: 1em;
+	margin-top: 1.78em;
+
+	color: @section-title-color;
+	.font-size(1.4);
+	.font-size(1.4);
+	font-weight: 700;
+	letter-spacing: 0;
+	line-height: 1.875;
+	text-transform: uppercase;
+
+	&.dark {
+		border: 0;
+
+		color: @heading-color;
+		letter-spacing: 2px;
+	}
+
+	&.invert {
+		color: @secondary-text;
+		border-bottom-color: fade(@secondary-text, 50%);
+	}
+
+	a {
+		color: @section-title-color;
+	}
+}
+
+/*-----[Article Excerpt Title]-----*/
+.excerpt-title {
+	margin-top: 0;
+	margin-bottom: 1em;
+
+	.font-size(1.2);
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 0;
+
+	&.invert {
+		color: @secondary-heading-color;
+	}
+	a {
+		color: @heading-color;
+		&:hover {
+			color: @link-hover-color
+		}
+	}
+}
+
+/* [Paragraph]
+============================================================*/
+p {
+	margin-top: 0;
+}
+
+blockquote {
+	border-left: 1px solid @default-accent;
+	padding: 0 0 0 2.5em;
+	margin: 0;
+
+	p {
+		color: @muted-text-color;
+		font-style: italic
+	}
+
+	cite,
+	span {
+		display: block;
+
+		margin-top: 1em;
+
+		color: @default-text;
+		.font-size(1);
+		font-weight: 700;
+		font-style: normal;
+	}
+}
+
+address {
+	margin-bottom: 1em;
+}

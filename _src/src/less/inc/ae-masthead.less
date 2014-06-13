@@ -1,0 +1,228 @@
+// -----------------------------------------------------------------
+// * [Masthead Styles]
+// *
+// * @project Leather's Works Wordpress Theme
+// * @version 1.0.0
+// *
+// * @author Dwi A. Hambali <dwi@aestik.com>
+// * @author Pratama H. Salahudin <pratama@aestik.com>
+// -----------------------------------------------------------------
+
+/* [Header]
+ -
+ * everything inside the left side container
+============================================================*/
+
+.header {
+	background-color: transparent;
+
+	position: fixed;
+	z-index: 3;
+
+	height: 10em;
+	width: 100%;
+
+	text-align: center;
+
+	transition: all .5s ease;
+
+	&.scrolled {
+		background-color: @secondary-background;
+		height: 6em;
+
+		.search-container,
+		.menu-container {
+			top: 1.8em;
+		}
+
+		.cart-container {
+			top: 1.8em;
+		}
+
+		.logo-image {
+			margin-top: .9em;
+			img {
+				height: 4em;
+			}
+		}
+
+		.branding {
+			margin: .8em auto 0;
+			.site-title {
+				.font-size(1.8);
+			}
+			.site-description {
+				.font-size(.8);
+				padding-top: .2em
+			}
+		}
+	}
+}
+
+/*-----[Branding]-----*/
+.branding {
+	margin: 1.2em auto 0;
+	transition: all .5s ease;
+}
+
+.site-title {
+	padding-bottom: .2em;
+
+	color: @secondary-heading-color;
+	font-family: @font-3;
+	.font-size(2.4);
+	font-weight: 400;
+	.opacity(0.9, 90);
+	// transition: all .5s ease;
+	a {
+		color: @secondary-heading-color;
+	}
+}
+
+.site-description {
+	.inlineDisplay();
+	border-top: 1px solid @secondary-accent;
+
+	padding-top: .5em;
+
+	color: @secondary-heading-color;
+	.font-size(1);
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	// transition: all .5s ease;
+}
+
+.logo-image{
+	margin-top: 1.9em;
+	transition: all .5s ease;
+	img {
+		height: 5.416em;
+		transition: all .5s ease;
+	}
+}
+
+.icon-top {
+	color: fade(@default-background, 80%);
+	font-size: 24px;
+}
+
+/*-----[Search Form]-----*/
+
+.search-container {
+	left: 3.5em;
+	position: absolute;
+	top: 3.2em;
+	transition: all .5s ease;
+	> a {
+		&:hover {
+			.opacity(0.3, 30);
+		}
+	}
+	button {
+		margin-top: .5em;
+	}
+}
+
+.search-toggle {
+	display: none;
+}
+
+/*-----[Cart Icon]-----*/
+.cart-container {
+	position: absolute;
+	right: 7.5em;
+	top: 3.2em;
+	transition: all .5s ease;
+	> a {
+		&:hover {
+			.opacity(0.3, 30);
+		}
+		.cart-badge {
+			background: @default-accent;
+			color: @secondary-heading-color;
+			font-weight: 800;
+			.font-size(1);
+			padding: .2em .4em;
+			border-radius: 50px;
+
+			position: absolute;
+			top: -.5em;
+			right: -1.5em;
+		}
+	}
+	.icon-top {
+		font-size: 28px;
+		top: -.1em;
+		position: relative;
+	}
+	.aecon-cancel.icon-top {
+		font-size: 24px;
+		top: 0;
+		position: relative;
+	}
+}
+
+/*-----[Menu Icon]-----*/
+.menu-container {
+	position: absolute;
+	right: 3.5em;
+	top: 3.2em;
+	transition: all .5s ease;
+	> a {
+		&:hover {
+			.opacity(0.3, 30);
+		}
+	}
+}
+
+.menu-toggle {
+	display: none;
+}
+
+.cart-toggle {
+	display: none;
+}
+
+/* [Hero/Slider]
+============================================================*/
+.hero {
+	display: block;
+
+	position: relative;
+
+	max-width: 100%;
+
+	height: auto;
+
+	img {
+		display: block;
+		height: auto;
+		width: 100%;
+	}
+
+	&-text {
+		left: 0;
+		position: absolute;
+		right: 0;
+		top: 25%;
+		margin: auto;
+
+		width: 707px !important;
+	}
+	&.inner {
+		height: 9em;
+		overflow: hidden;
+	}
+}
+
+.shopping-cart {
+	position: fixed;
+	z-index: 2;
+	background: @secondary-background;
+	width: 100%;
+	height: 100%;
+	overflow-y: scroll;
+
+	padding: 12.5em 33.333em;
+}

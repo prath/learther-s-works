@@ -1,0 +1,7 @@
+Session.vim
+*.swp
+*.bak.php
+includes/old/
+*.sublime-project
+*.sublime-workspace
+*.swo

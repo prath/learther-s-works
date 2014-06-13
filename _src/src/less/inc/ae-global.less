@@ -1,0 +1,158 @@
+// ------------------------------------------------------------------------------
+// * [Global Styles]
+// *
+// * @project Digboots Wordpress Theme
+// * @version 1.0.0
+// *
+// * @author Dwi A. Hambali <dwi@aestik.com>
+// * @author Pratama H. Salahudin <pratama@aestik.com>
+// ------------------------------------------------------------------------------
+
+/* [Border Box on every element]
+============================================================*/
+* {
+	&,
+	&:before,
+	&:after {
+		box-sizing: border-box;
+	}
+}
+
+html {
+	font-size: percentage(@base-font);
+}
+
+/* [Body Styles]
+============================================================*/
+body{
+	background-color: @default-background;
+
+	position: relative;
+
+	margin: 0;
+
+	color: @body-text-color;
+	font-family: @font-1;
+	.font-size(1.2);
+	font-weight: 400;
+	line-height: 1.667;
+	text-rendering: optimizeLegibility;
+}
+
+/* [Link Styles]
+============================================================*/
+a{
+	color: @link-color;
+	text-decoration: none;
+	transition: all .8s ease;
+	&:hover{
+		color: @link-hover-color;
+		text-decoration: none;
+
+	}
+}
+
+/*-----[Link Inside Paragraph]-----*/
+p {
+	a {
+		border-bottom: 1px solid @default-accent;
+	}
+}
+
+hr {
+	margin-bottom: 30px;
+	border-top-color: lighten(@muted-text-color, 37%);
+}
+
+small {
+
+}
+
+/* [Global Containers]
+============================================================*/
+
+.container {
+	.sidebar {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+}
+
+.wrapper {
+	.right-sidebar {
+		padding-right: 0;
+	}
+	.left-sidebar {
+		padding-left: 0;
+	}
+}
+
+.footer {
+	.clearfix();
+	.font-size(1);
+	border-top: 1px dotted @dotted-separator-color;
+	padding: 1.5em 0;
+	text-transform: uppercase;
+	font-weight: 700;
+	.footer-menu {
+		.clearfix();
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		li {
+			float: left;
+			margin-left: 3em;
+			a {
+				color: @default-text;
+				&:hover {
+					color: @link-hover-color;
+				}
+			}
+		}
+	}
+}
+
+.main-content {
+	margin-bottom: 2.5em;
+}
+
+/* [Helper Classes]
+============================================================*/
+
+/*-----[override bottom padding to 50px]-----*/
+.padded {
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+/*-----[Screen Reader]-----*/
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}
+
+/*-----[Put Overlayed element inside this class]-----*/
+.overlay {
+	left: 0;
+	position: absolute;
+	right: 0;
+
+	margin: auto;
+
+	width: 100%;
+
+	text-align: center;
+}
+
+.pull-right {
+  float: right !important;
+}
+.pull-left {
+  float: left !important;
+}

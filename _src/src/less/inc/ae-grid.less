@@ -1,0 +1,82 @@
+// -----------------------------------------------------------------
+// * [Custom Grid]
+// *
+// * @project digboots
+// * @version 1.0.0
+// *
+// * @author Dwi A. Hambali <dwi@aestik.com>
+// * @author Pratama H. Salahudin <pratama@aestik.com>
+// -----------------------------------------------------------------
+
+/* [Booststrap Styles Grid system]
+------------------------------------------------------------------*/
+
+.container {
+	.clearfix();
+
+	width: 100%;
+
+	margin: auto;
+}
+
+.wrapper {
+	.clearfix();
+	margin: auto;
+	// padding-left: 8.3333em;
+	// padding-right:
+	padding: 2.1em 8.3333em;
+}
+
+.wrapper-full {
+	.clearfix();
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.row-stretched {
+	.clearfix();
+	margin-left: -25px;
+	margin-right: -25px;
+	> [class*="col-"] {
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+}
+
+.row {
+  .make-row();
+  .clearfix();
+}
+
+.make-grid-columns();
+
+.make-grid(xs);
+
+@media (min-width: @screen-sl-min) {
+  .make-grid(sl);
+}
+
+@media (min-width: @screen-sm-min) {
+  .make-grid(sm);
+}
+
+@media (min-width: @screen-md-min) {
+  .make-grid(md);
+}
+
+@media (min-width: @screen-lg-min) {
+  .make-grid(lg);
+}
+
+@media (min-width: @screen-xl-min) {
+  .make-grid(xl);
+}
+
+@media (min-width: @screen-vl-min) {
+  .make-grid(vl);
+}
+
+@media (min-width: @screen-ul-min) {
+  .make-grid(ul);
+}

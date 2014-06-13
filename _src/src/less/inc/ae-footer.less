@@ -1,0 +1,42 @@
+// -----------------------------------------------------------------
+// * [Footer Styles]
+// *
+// * @project Digboots Wordpress Theme
+// * @version 1.0.0
+// *
+// * @author Dwi A. Hambali <dwi@aestik.com>
+// * @author Pratama H. Salahudin <pratama@aestik.com>
+// -----------------------------------------------------------------
+
+/* [Footer and Watermark]
+============================================================*/
+footer {
+	line-height: @lh-0-0;
+	&.bottom {
+		.clearfix();
+		background-color: @secondary-background;
+		a {
+			color: @secondary-text;
+			&:hover {
+				color: @default-accent;
+			}
+			&.social.icon {
+				margin-right: 40px;
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+	.watermark {
+		width: 70%;
+
+		margin: 0 auto;
+
+		text-align: center;
+	}
+
+	.social.icons {
+		text-align: center;
+	}
+}

@@ -1,0 +1,49 @@
+// -----------------------------------------------------------------
+// * [Table Styles]
+// *
+// * @project Digboots Wordpress Theme
+// * @version 1.0.0
+// *
+// * @author Dwi A. Hambali <dwi@aestik.com>
+// * @author Pratama H. Salahudin <pratama@aestik.com>
+// -----------------------------------------------------------------
+
+/* [Default Table]
+==================================================*/
+table {
+	width: 100%;
+	margin-bottom: 30px;
+	> thead,
+	> tbody,
+	> tfoot {
+		> tr {
+			> th,
+			> td {
+				padding: @table-cell-padding;
+				line-height: @lh-1-2;
+				vertical-align: top;
+				border-top: 1px solid @table-border-color;
+			}
+		}
+	}
+
+	> thead > tr > th {
+		vertical-align: bottom;
+		border-bottom: 1px solid @default-accent;
+	}
+
+	> caption + thead,
+	> colgroup + thead,
+	> thead:first-child {
+		> tr:first-child {
+			> th,
+			> td {
+				border-top: 0;
+			}
+		}
+	}
+
+	> tbody + tbody {
+		border-top: 2px solid @table-border-color;
+	}
+}

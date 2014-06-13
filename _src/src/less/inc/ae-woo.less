@@ -1,0 +1,399 @@
+// -----------------------------------------------------------------
+// * [Masthead Styles]
+// *
+// * @project Leather's Works Wordpress Theme
+// * @version 1.0.0
+// *
+// * @author Dwi A. Hambali <dwi@aestik.com>
+// * @author Pratama H. Salahudin <pratama@aestik.com>
+// -----------------------------------------------------------------
+
+/* [Products]
+============================================================*/
+
+ul.products {
+	clear: both;
+	.clearfix();
+	list-style: none;
+
+	margin: 0;
+	padding: 0;
+
+	li.product {
+		position: relative;
+
+		&:hover {
+			a.btn-quickview {
+				display: block;
+			}
+			> a {
+				> img {
+					.opacity(0.1, 10);
+				}
+			}
+		}
+
+		a.btn-quickview {
+			display: none;
+		}
+
+		a {
+			display: block;
+			img {
+				display: block;
+				width: 100%;
+
+				margin-bottom: 2.14em;
+			}
+
+			.onsale {
+				background-color: @default-accent;
+				border-radius: 4em;
+
+				left: 1em;
+				position: absolute;
+				top: 1em;
+				z-index: 1;
+
+				height: 4em;
+				width: 4em;
+
+				color: @default-background;
+				.font-size(1);
+				font-weight: 700;
+				line-height: 4;
+				text-align: center;
+				text-transform: uppercase;
+
+				&:after {
+					content: '';
+
+					border: 1px solid @default-background;
+					border-radius: 4em;
+
+					left: 2px;
+					position: absolute;
+					top: 2px;
+
+					height: 3.6em;
+					width: 3.6em;
+				}
+			}
+
+			.product-title {
+				width: 80%;
+
+				overflow: hidden;
+
+				margin: 0 auto;
+
+				.font-size(1.3);
+				font-weight: 700;
+				letter-spacing: 2px;
+				line-height: 1;
+				text-align: center;
+				text-overflow: ellipsis;
+				text-transform: uppercase;
+				white-space: nowrap;
+			}
+
+			.price {
+				display: block;
+
+				margin-bottom: 1.875em;
+
+				color: @btn-secondary-color;
+				.font-size(1.6);
+				font-weight: 700;
+				text-align: center;
+
+				del {
+					color: lighten(@btn-secondary-color, 20%);
+					.amount {
+						color: lighten(@btn-secondary-color, 20%);
+						font-weight: 400;
+					}
+				}
+				ins {
+					text-decoration: none;
+					.amount {
+					}
+				}
+			}
+		}
+		.product-buttons {
+			.clearfix();
+
+			margin-bottom: 1em;
+		}
+
+	}
+}
+
+/*-----[Three Column Products list]-----*/
+ul.three-cols {
+	li {
+		margin-top: 1px;
+		&:before {
+			content: '';
+			height: 100%;
+			width: 1px;
+			background-color: @separator-color;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+
+		&:after {
+			content: '';
+			width: 100%;
+			height: 1px;
+			background-color: @separator-color;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+
+		}
+		&:nth-child(3n+3) {
+			&:before {
+				background-color: transparent;
+			}
+		}
+	}
+}
+
+/*-----[Wishlist Button]-----*/
+.add-wishlist {
+	float: left;
+	margin-left: 1em;
+}
+
+/*-----[Add to Cart Button]-----*/
+.add-cart {
+	float: right;
+	margin-right: 1em;
+}
+
+/*-----[Star Rating]-----*/
+ul.products li.product a .star-rating,
+.woocommerce .star-rating {
+	display: block;
+	float:none;
+	overflow: hidden;
+	position: relative;
+
+	margin: 0 auto 1em;
+
+	height: 1em;
+	line-height: 1;
+	.font-size(1);
+	width: 6em;
+	font-family: 'FontAwesome';
+
+	&:before {
+		content: "\f005\0020\f005\0020\f005\0020\f005\0020\f005\0020";
+		color: lighten(@muted-text-color, 20%);
+		float: left;
+		top: 0;
+		left: 0;
+		position: absolute;
+	}
+	span {
+		overflow: hidden;
+		float: left;
+		top: 0;
+		left: 0;
+		position: absolute;
+		padding-top: 1.5em;
+		color: @default-accent;
+		.font-size(1);
+		&:before {
+			content: "\f005\0020\f005\0020\f005\0020\f005\0020\f005\0020";
+			color: @heading-color;
+			top: 0;
+			position: absolute;
+			left: 0;
+		}
+	}
+}
+
+/*-----[WooCommerce Filter and Results]-----*/
+.woocommerce-result-count {
+	float: left;
+	font-style: italic;
+	margin-left: 2em;
+	margin-bottom: 3em;
+}
+
+.woocommerce-ordering {
+	float: right;
+	margin-right: 2em;
+}
+
+/*-----[WooCommerce Widgets Styles]-----*/
+.woocommerce {
+	ul {
+		&.product_list_widget li {
+			padding-left: 4em;
+			position: relative;
+
+			a {
+				.clearfix();
+				display: block;
+				position: relative;
+				width: 100%;
+			}
+
+			img {
+				left: -4em;
+				position: absolute;
+				height: 3em;
+				width: 3em;
+			}
+		}
+	}
+	.from {
+		color: lighten(@btn-secondary-color, 20%);
+	}
+
+	del,
+	ins {
+		display: inline-block;
+		zoom: 1;
+		vertical-align: top;
+		position: relative;
+		color: @muted-text-color;
+	}
+
+	del {
+		color: lighten(@btn-secondary-color, 20%);
+		.amount {
+			color: lighten(@btn-secondary-color, 20%);
+		}
+	}
+
+	ins {
+		text-decoration: none;
+		.amount {
+		}
+	}
+
+	.amount {
+		color: @muted-text-color;
+	}
+
+	.star-rating {
+		margin-left: 0;
+		margin-right: 0;
+		margin-top: .5em;
+		margin-bottom: .5em;
+	}
+
+	dl.variation {
+		color: @muted-text-color;
+		margin: 0;
+		dt {
+			float: left;
+		}
+		dd {
+			.inlineDisplay();
+			margin: 0 0 0 .2em;
+		}
+	}
+
+	.total {
+		position: relative;
+		color: @heading-color;
+		font-weight: 700;
+
+		border-top: 1px solid @separator-color;
+		margin-top: -5px;
+		padding-top: 1em;
+		border-bottom: 1px solid @separator-color;
+		padding-bottom: 1em;
+
+		.clearfix();
+		.amount {
+			float: right;
+		}
+
+		&:after {
+			content: '';
+			width: 100%;
+			display: block;
+			border-bottom: 1px solid @separator-color;
+			position: absolute;
+			bottom: 1px;
+			left: 0;
+		}
+	}
+
+	.btn-viewcart,
+	.btn-checkout {
+		display: block;
+		margin-bottom: .8em;
+	}
+}
+
+/*-----[Header's Collapsible Shopping Cart]-----*/
+.shopping-cart {
+	.widget_shopping_cart {
+		border-top: 1px dotted @secondary-accent;
+		padding: 4.167em 0;
+	}
+	.woocommerce {
+		ul {
+			li {
+				border-color: fade(@secondary-accent, 25%);
+			}
+			a {
+				color: @secondary-text;
+			}
+		}
+		.from {
+			color: lighten(@btn-secondary-color, 20%);
+		}
+
+		del,
+		ins {
+			color: @secondary-accent;
+		}
+
+		del {
+			color: @secondary-accent;
+			.amount {
+				color: @secondary-accent;
+			}
+		}
+
+		.amount {
+			color: @secondary-accent;
+		}
+
+		dl.variation {
+			color: @secondary-accent;
+		}
+
+		.total {
+			color: @secondary-text;
+
+			border-color: fade(@secondary-accent, 25%);
+
+			&:after {
+				border-color: fade(@secondary-accent, 25%);
+			}
+		}
+
+		.quantity {
+			color: @secondary-accent;
+		}
+		.btn-primary {
+			color: @default-accent;
+			border-color: @default-accent;
+		}
+		.btn-secondary {
+			color: @secondary-accent;
+			border-color: @secondary-accent;
+		}
+	}
+}

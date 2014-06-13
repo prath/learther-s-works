@@ -1,0 +1,118 @@
+// -----------------------------------------------------------------
+// * [LESS Variables]
+// *
+// * @author Dwi A. Hambali <dwi@aestik.com>
+// * @author Pratama H. Salahudin <pratama@aestik.com>
+// -----------------------------------------------------------------
+
+@import 'skins/skin-default';
+@import 'ae-font-stacks';
+
+// [Typography Variables]
+// ------------------------------------------------------------------
+@font-1							: @merriweathersans;
+@font-2							: @poiret;
+@font-3							: @cinzel;
+
+@base-font						: 0.625;
+
+//-----[Body Font-sizes]-----//
+@body-fz-ul						: 2.4;
+@body-fz-vl						: 2;
+@body-fz-xl						: 1.8;
+@body-fz-lg						: 1.6;
+@body-fz-md						: 1.4;
+@body-fz-df						: 1.3;
+@body-fz-sm						: 1.2;
+@body-fz-xs						: 1.1;
+@body-fz-us						: 1;
+
+//-----[Heading Font-sizes in EM]-----//
+@heading-hero-fz				: 3.5em;
+@heading-1-fz					: 4em;
+@heading-2-fz					: 2.5em;
+@heading-3-fz					: 1.875em;
+@heading-4-fz					: 1.5em;
+@heading-5-fz					: 1em;
+@heading-6-fz					: .8125em;
+
+//-----[Letter Spacing sizes]-----//
+@ls-xn							: -2.0px;
+@ls-nr							: -1.0px;
+@ls-nm							: 0;
+@ls-wd							: 1px;
+@ls-xw							: 2px;
+@ls-uw							: 5px;
+
+//-----[Line Height Sizes]-----//
+@lh-0-0							: .9375;
+@lh-1-0							: 1;
+@lh-1-1							: 1.25;
+@lh-1-2							: 1.5;
+@lh-1-3							: 1.875;
+@lh-2-0							: 2;
+@lh-2-1							: 2.25;
+@lh-2-2							: 2.5;
+@lh-2-3							: 2.875;
+@lh-3-0							: 3;
+@lh-3-1							: 3.25;
+@lh-3-2							: 3.5;
+@lh-3-3							: 3.875;
+@lh-4-0							: 4;
+@lh-4-1							: 4.25;
+@lh-4-2							: 4.5;
+@lh-4-3							: 4.875;
+@lh-5-0							: 5;
+@lh-5-1							: 5.25;
+@lh-5-2							: 5.5;
+@lh-5-3							: 5.875;
+@lh-6-0							: 6;
+@lh-6-1							: 6.25;
+@lh-6-2							: 6.5;
+@lh-6-3							: 6.875;
+
+// [Others]
+// ------------------------------------------------------------------
+@base-radius					: 0;
+
+// [Bootstrap Extended Variables]
+// ------------------------------------------------------------------
+
+//-----[Media queries breakpoints]-----//
+
+// Larger small screen / larger phone
+@screen-sl 						: 600px;
+@screen-sl-min					: @screen-sl;
+@screen-lg-phone				: @screen-sl-min;
+// Larger screen / wider desktop
+@screen-xl 						: 1400px;
+@screen-xl-min					: @screen-xl;
+@screen-xl-desktop				: @screen-xl-min;
+// Larger screen / wider desktop
+@screen-vl 						: 1600px;
+@screen-vl-min					: @screen-vl;
+@screen-vl-desktop				: @screen-vl-min;
+// Largest screen / widest desktop
+@screen-ul 						: 1900px;
+@screen-ul-min					: @screen-ul;
+@screen-ul-desktop				: @screen-ul-min;
+
+// So media queries don't overlap when required, provide a maximum
+@screen-sl-max					: (@screen-sl - 1);
+@screen-xl-max					: (@screen-xl - 1);
+@screen-vl-max					: (@screen-vl - 1);
+@screen-ul-max					: (@screen-ul - 1);
+
+//-----[Container sizes]-----//
+
+// Large screen / extra wide desktop
+@container-sl-phone				: ((580px + @grid-gutter-width));
+// Large screen / extra wide desktop
+@container-xl-desktop			: ((1340px + @grid-gutter-width));
+// Large screen / extra wide desktop
+@container-vl-desktop			: ((1540px + @grid-gutter-width));
+// Large screen / ultra wide desktop
+@container-ul-desktop			: ((1840px + @grid-gutter-width));
+
+//-----[Grid Custom]-----//
+@gutter-1						: 50px;

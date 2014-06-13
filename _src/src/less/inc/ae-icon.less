@@ -1,0 +1,82 @@
+// -----------------------------------------------------------------
+// * [Icon Styles]
+// *
+// * @project Leather's Works Wordpress Theme
+// * @version 1.0.0
+// *
+// * @author Dwi A. Hambali <dwi@aestik.com>
+// * @author Pratama H. Salahudin <pratama@aestik.com>
+// -----------------------------------------------------------------
+
+/* [Icon sizes]
+==================================================*/
+.icon-small {
+	font-size: 14px;
+}
+
+.icon-medium {
+	font-size: 24px;
+}
+
+.icon-big {
+	font-size: 48px;
+}
+
+.dripicon.icon-small {
+	&:before {
+		font-size: 14px;
+	}
+}
+
+.dripicon.icon-medium {
+	&:before {
+		font-size: 24px;
+	}
+}
+
+.dripicon.icon-big {
+	&:before {
+		font-size: 48px;
+	}
+}
+
+/* [Icon Colors]
+==================================================*/
+.icon-invert {
+	color: @secondary-text;
+}
+
+/* [Diamond icon]
+==================================================*/
+.diamond-icon {
+	.inlineDisplay();
+	background-color: @heading-color;
+
+	height: 1.428em;
+	width: 1.428em;
+
+	margin-left: 1.428em;
+	margin-top: .1em;
+
+	color: @default-background;
+	.font-size(1.4);
+	line-height: 1.65em;
+	text-align: center;
+
+	transform: rotate(-45deg);
+	transform-origin: 0 100%;
+
+	transition: all .6s ease;
+
+	i {
+		transform: rotate(45deg);
+		margin-left: .1em;
+	}
+
+	i.dripicon {
+		&:before {
+			transform: rotate(45deg);
+			margin-left: .1em;
+		}
+	}
+}

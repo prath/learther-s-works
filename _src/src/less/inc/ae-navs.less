@@ -1,0 +1,203 @@
+// -----------------------------------------------------------------
+// * [Navbar Styles]
+// *
+// * @project Digboots Wordpress Theme
+// * @version 1.0.0
+// *
+// * @author Dwi A. Hambali <dwi@aestik.com>
+// * @author Pratama H. Salahudin <pratama@aestik.com>
+// -----------------------------------------------------------------
+
+/* [Main Nav]
+==================================================*/
+
+.main-nav {
+	position: fixed;
+	z-index: 2;
+	background: @secondary-background;
+	width: 100%;
+	height: 100%;
+	overflow-y: scroll;
+
+	padding: 12.5em 16.667em;
+
+	ul.nav-list {
+		border-top: 1px dotted @secondary-accent;
+		padding: 4.167em 0;
+
+		> li {
+			.clearfix();
+			border-bottom: 1px solid fade(@secondary-accent, 25%);
+			padding-bottom: 1em;
+			padding-top: 1em;
+			margin-right: 0;
+			> a {
+				float: left;
+				.font-size(1.2);
+				font-weight: 800;
+				width: 20%;
+			}
+		}
+	}
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		li {
+			a {
+				text-transform: uppercase;
+				color: @secondary-accent;
+				&:hover {
+					color: @secondary-text;
+				}
+			}
+			&.active {
+				> a {
+					color: @default-accent;
+				}
+			}
+		}
+
+		> li {
+			margin-right: 2.5em;
+			> a {
+				.font-size(1);
+				font-weight: 700;
+			}
+		}
+	}
+
+	ul.submenu {
+		.clearfix();
+		float: left;
+		width: 80%;
+		li {
+			// display: table-cell;
+			.inlineDisplay();
+			// float: left;
+		}
+
+		ul {
+			border-left: 1px solid fade(@secondary-accent, 25%);
+			float: none;
+			display: block;
+			padding-top: .5em;
+			padding-left: 1em;
+			padding-bottom: .5em;
+			margin-bottom: .5em;
+			margin-top: .5em;
+
+			> li {
+				display: table-row;
+			}
+		}
+	}
+}
+
+/* [Breadcrumbs]
+==================================================*/
+.breadcrumb {
+	font-family: @font-3;
+	font-weight: 700;
+	color: lighten(@muted-text-color, 15%);
+	text-transform: lowercase;
+
+	a {
+		color: @muted-text-color;
+	}
+}
+
+/* [Paginations]
+==================================================*/
+.pagination {
+	.clearfix();
+	width: 100%;
+	position: relative;
+	text-align: center;
+	ul {
+		text-align: center;
+		margin: 0;
+		padding: 2em 0 0;
+		list-style: none;
+		li {
+			// position: relative;
+			.inlineDisplay();
+			text-align: center;
+			a {
+				color: @default-text;
+				font-weight: 700;
+				&:hover {
+					color: @default-accent;
+				}
+			}
+			.page-numbers {
+				padding-left: 1em;
+				padding-right: 1em;
+				&:after {
+					.inlineDisplay();
+					position: relative;
+					content: '.';
+					right: -1em;
+					// margin-right: 2em;
+					// position: absolute;
+					// right: -.2em;
+					// top: 0;
+				}
+				&.current {
+					color: @section-title-color;
+				}
+			}
+
+			&:nth-last-child(2) {
+				.page-numbers {
+					&:after {
+						content: '';
+						right: 0;
+					}
+				}
+			}
+			.prev.page-numbers,
+			.next.page-numbers {
+				&:after {
+					content: '';
+					right: 0;
+				}
+			}
+
+			.prev,
+			.next {
+				position: absolute;
+				top: 1.5em;
+				.font-size(1.1);
+				text-transform: uppercase;
+				i {
+					.inlineDisplay();
+					.font-size(1.4);
+					width: 2em;
+					height: 2em;
+					margin-top: -.5em;
+					line-height: 2;
+					background: @default-accent;
+					color: @default-background;
+					transition: all .6s ease;
+				}
+			}
+
+			.prev {
+				left: 0;
+				i {
+					margin-right: .5em;
+				}
+			}
+
+			.next {
+				right: 0;
+				i {
+					margin-left: .5em;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,176 @@
+// -----------------------------------------------------------------
+// * [Button Styles]
+// *
+// * @project Leather's Works Wordpress Theme
+// * @version 1.0.0
+// *
+// * @author Dwi A. Hambali <dwi@aestik.com>
+// * @author Pratama H. Salahudin <pratama@aestik.com>
+// -----------------------------------------------------------------
+
+/* [Global Button Style]
+==================================================*/
+.btn {
+	.inlineDisplay();
+	background-color: transparent;
+	border: 1px solid @btn-primary-color;
+
+	padding: 1.1em 1.5em 1em;
+
+	color: @btn-primary-color;
+	font-family: @font-1;
+	.font-size(1);
+	font-weight: 800;
+	line-height: 1;
+	text-transform: uppercase;
+
+	transition: all .6s ease;
+	&:hover {
+		border-color: lighten(@btn-primary-color, 20%);
+		color: lighten(@btn-primary-color, 20%);
+	}
+}
+
+/* [Primary Button]
+==================================================*/
+.btn-primary {
+	color: @btn-primary-color;
+	border-color: @btn-primary-color;
+}
+.btn-secondary {
+	color: @btn-secondary-color;
+	border-color: @btn-secondary-color;
+}
+
+/* [Link Button]
+==================================================*/
+.btn-link {
+
+}
+
+/* [Button Sizes]
+==================================================*
+/*-----[Button Large]-----*/
+.btn-lg {
+
+}
+
+/*-----[Button Extra Small]-----*/
+.btn-xs {
+
+}
+
+/* [Button CTA]
+==================================================*/
+.btn-cta {
+	.font-size(1.8);
+	font-weight: 400;
+
+	&.accent {
+		border-color: @default-accent;
+		color: @default-accent;
+		&:hover {
+			border-color: @secondary-heading-color;
+			color: @secondary-heading-color;
+		}
+	}
+
+	&.white {
+		border-color: @secondary-heading-color;
+		color: @secondary-heading-color;
+		&:hover {
+			border-color: @default-accent;
+			color: @default-accent;
+		}
+	}
+	&-overlay-bottom {
+		bottom: 23%;
+	}
+	&-overlay-top {
+		top: 23%;
+	}
+
+	&.small {
+		// padding: 0.6em 1.5em;
+
+		.font-size(1.4);
+		font-weight: 700;
+	}
+}
+
+/* [Button Diamond]
+==================================================*/
+.btn-diamond {
+	.font-size(.9);
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: all .6s ease;
+
+	&-primary {
+		color: @heading-color;
+		&:hover {
+			.diamond-icon {
+				background-color: @default-accent;
+			}
+		}
+	}
+
+	&-secondary {
+		color: @btn-secondary-color;
+		.diamond-icon {
+			background-color: @btn-secondary-color;
+			// height: 1.428em;
+			// width: 1.428em;
+
+			// margin-left: 1.428em;
+			// margin-top: .1em;
+
+			// .font-size(1.4);
+			// line-height: 1.428;
+			i {
+				// margin-top: .2em;
+			}
+		}
+		&:hover {
+			.diamond-icon {
+				background-color: @default-accent;
+			}
+		}
+	}
+}
+
+/* [Button QuickView]
+==================================================*/
+.btn-quickview {
+	// bottom: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 25%;
+	z-index: 1;
+
+	margin: auto;
+
+	height: 7.14em;
+	width: 7.14em;
+
+	transition: all .6s ease;
+}
+
+.btn-icon {
+	margin-left: 1em;
+	// margin-top: -0.2em;
+	.font-size(1.4);
+	line-height: 0;
+}
+
+/* [Button Tags]
+==================================================*/
+.btn-tags {
+	.inlineDisplay();
+	border-bottom: 1px dotted fade(@separator-color, 70%);
+	margin-bottom: .5em;
+	margin-right: .5em;
+
+	color: @default-text;
+}

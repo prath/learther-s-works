@@ -1,0 +1,112 @@
+// -----------------------------------------------------------------
+// * [Post Content Styles]
+// *
+// * @project Digboots Wordpress Theme
+// * @version 1.0.0
+// *
+// * @author Dwi A. Hambali <dwi@aestik.com>
+// * @author Pratama H. Salahudin <pratama@aestik.com>
+// -----------------------------------------------------------------
+
+/* [Posts]
+============================================================*/
+
+.page-title {
+	margin: 8.333em auto 10em;
+	width: 100%;
+	padding: 0 8.333em;
+	text-align: center;
+	h1 {
+		margin-top: 0;
+	}
+	.title-separator {
+		.clearfix();
+		position: relative;
+		width: 4.12em;
+		margin: 3em auto 0;
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background: transparent;
+			border: 1px solid @special-separator-color;
+			height: 1.8em;
+			width: 1.8em;
+			margin: auto;
+			transform: rotate(-45deg);
+			// transform-origin: 0 100%;
+		}
+		&:after {
+			position: absolute;
+			content: '';
+			height: 1px;
+			background: @special-separator-color;
+			width: 100%;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+		}
+	}
+}
+
+/*-----[Excerpt Style like in feature list/recent news widgets]-----*/
+.excerpt {
+	.clearfix();
+	position: relative;
+	margin-bottom: 1em;
+	margin-top: 2em;
+
+	&.w-icon {
+		&.invert {
+			color: @secondary-text;
+		}
+
+		i {
+			position: absolute;
+			margin-top: .1em;
+		}
+
+		.article-text {
+			margin-left: 6.5em;
+		}
+	}
+	.meta-info {
+		margin-top: -1em;
+	}
+}
+
+.meta-info {
+	color: @muted-text-color;
+	.font-size(1.1);
+	margin-bottom: 2em;
+}
+
+/*-----[Image Caption]-----*/
+.wp-caption-text {
+	margin-top: .5em;
+	font-style: italic;
+	color: lighten(@muted-text-color, 10%);
+}
+
+/*-----[Post/RSS dates & the likes]-----*/
+.post-date,
+.rss-date {
+	.font-size(1.1);
+	color: @muted-text-color;
+}
+
+.rss-date {
+	display: block;
+	margin-top: -.2em;
+}
+
+/*-----[Summary on rss widgets]-----*/
+.rssSummary {
+	margin-bottom: .5em;
+	margin-top: .5em;
+}
