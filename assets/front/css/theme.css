@@ -2149,6 +2149,18 @@ select[multiple].input-lg
 
     background: #68625b;
 }
+.page-title .subtitle
+{
+    font-family: 'Cinzel Decorative', Baskerville, 'Baskerville Old Face', Georgia, 'Times New Roman', serif;
+    font-size: 30px;
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1;
+
+    text-transform: lowercase;
+
+    color: #c0bab4;
+}
 /*-----[Excerpt Style like in feature list/recent news widgets]-----*/
 .excerpt
 {

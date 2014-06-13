@@ -27,7 +27,7 @@ include 'header.php';
 		 */
 	?>
 	<?php
-	page_title('Shop', 'Shop', 'Shop Title');
+	page_title('Shop With Sidebar', 'Shop', 'Shop Title');
 	?>
 
 	<?php
@@ -36,13 +36,29 @@ include 'header.php';
 		 */
 	?>
 	<div class="container main-content">
+		<div class="row">
 
-		<?php
-			/**
-			 * Product List including Pagination and Filter
-			 */
-		?>
-		<?php include '__partials/products-twelve-items.php'; ?>
+			<?php
+				/**
+				 * Product List including Pagination and Filter
+				 */
+			?>
+			<div class="col-md-9">
+				<?php include '__partials/products-twelve-items.php'; ?>
+			</div>
+
+			<?php
+				/**
+				 * Sidebar
+				 */
+			?>
+			<aside class="col-md-3 sidebar">
+				<?php widget_categories();?>
+				<?php widget_shopping_cart();?>
+				<?php widget_popular_posts();?>
+				<?php widget_featured_products();?>
+			</aside>
+		</div>
 	</div>
 
 	<?php
