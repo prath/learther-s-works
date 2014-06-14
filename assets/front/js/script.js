@@ -27,6 +27,13 @@
 		});
 
 		/**
+		 * Fitvids
+		 */
+		if ($('.fitvids').length) {
+			$(".fitvids").fitVids();
+		}
+
+		/**
 		 * Toggle Search Form on icon clicked
 		 */
 		search.on('click', function(e) {

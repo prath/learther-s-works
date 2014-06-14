@@ -244,3 +244,145 @@
 		text-align: right;
 	}
 }
+
+/* [Blog Post Thumbs/Excerpts]
+============================================================*/
+
+.blog-entry-thumb {
+	padding: 0.8333em;
+	img {
+		width: 100%;
+	}
+
+	.entry-header {
+		left: 0;
+		right: 0;
+		margin: auto;
+		background: fade(@default-background, 90%);
+		bottom: 0;
+		position: absolute;
+		width: 98%;
+		height: 10em;
+		text-align: center;
+		padding: 2.5em;
+	}
+
+	.entry-title {
+		margin-top: 0;
+		margin-bottom: 0;
+		a {
+			color: @heading-color;
+			letter-spacing: 2px;
+			.truncate(90%);
+		}
+	}
+}
+
+.readmore {
+	background: @default-background;
+	color: @default-text;
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+	.font-size(1.4);
+	height: 2.5em;
+	width: 2.5em;
+	line-height: 2.5;
+	&:hover {
+		background: fade(@default-background, 80%);
+		color: @default-accent;
+	}
+}
+
+.blog-entries {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	.font-size(1.4);
+	line-height: 1.785;
+
+	.blog-entry {
+		border-bottom: 1px solid @separator-color;
+		padding-bottom: 1em;
+		margin-bottom: 3.57em;
+
+		&.format-status,
+		&.format-link,
+		&.format-aside {
+			.entry-content {
+				border-left: 1px solid @default-accent;
+				padding-left: 2.5em;
+			}
+		}
+
+		&.format-link {
+			.entry-content {
+				a {
+					border-bottom: 1px solid @default-accent;
+				}
+			}
+		}
+
+		&.format-aside {
+			.entry-content {
+				background: fade(@muted-text-color, 7%);
+				padding: 2.5em;
+			}
+		}
+
+		&.format-chat {
+			.entry-content {
+				p {
+					border-left: 1px solid @default-accent;
+					padding: 1em 1em 1em 2.5em;
+					margin-bottom: 1px;
+					&:nth-child(odd) {
+						background-color: fade(@muted-text-color, 7%);
+					}
+				}
+			}
+		}
+
+	}
+
+	.featured-image,
+	.fitvids {
+		width: 100%;
+		margin-bottom: 3.57em;
+	}
+
+	header {
+		margin-bottom: 2.14em;
+		.entry-title {
+			margin-top: 0;
+			margin-bottom: 0;
+			line-height: 1.5;
+			a {
+				color: @heading-color;
+				letter-spacing: -2px;
+			}
+		}
+	}
+
+	.entry-content {
+		margin-bottom: 2.5em;
+	}
+
+	.entry-buttons {
+		.clearfix();
+		position: relative;
+	}
+}
+
+.entry-meta {
+	color: @muted-text-color;
+	.font-size(1.2);
+	font-style: italic;
+	.post-date {
+		.font-size(1.2);
+	}
+	a {
+		color: @heading-color;
+	}
+}
+

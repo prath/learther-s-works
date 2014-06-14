@@ -74,6 +74,7 @@
 		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
 
 		<script src="assets/front/js/vendor/waypoints.min.js"></script>
+		<script src="assets/front/js/vendor/jquery.fitvids.js"></script>
 		<script src="assets/front/js/script.min.js"></script>
 
 		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

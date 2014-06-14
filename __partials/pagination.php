@@ -8,7 +8,7 @@
  */
 ?>
 
-<nav class="woocommerce-pagination pagination">
+<nav class="pagination">
 	<ul class="page-numbers">
 		<li><a class="prev page-numbers" href=""><i class="dripicon dripicon-chevron-left"></i> Prev</a></li>
 		<li><a class="page-numbers" href="">1</a></li>

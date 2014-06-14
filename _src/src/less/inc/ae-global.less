@@ -116,6 +116,45 @@ small {
 	margin-bottom: 2.5em;
 }
 
+/*-----[Three Column list]-----*/
+ul.three-cols {
+	clear: both;
+	.clearfix();
+	list-style: none;
+
+	margin: 0;
+	padding: 0;
+	li {
+		position: relative;
+		margin-top: 1px;
+		&:before {
+			content: '';
+			height: 100%;
+			width: 1px;
+			background-color: @separator-color;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+
+		&:after {
+			content: '';
+			width: 100%;
+			height: 1px;
+			background-color: @separator-color;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+
+		}
+		&:nth-child(3n+3) {
+			&:before {
+				background-color: transparent;
+			}
+		}
+	}
+}
+
 /* [Helper Classes]
 ============================================================*/
 

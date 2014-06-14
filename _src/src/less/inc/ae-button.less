@@ -107,6 +107,7 @@
 	transition: all .6s ease;
 
 	&-primary {
+		float: right;
 		color: @heading-color;
 		&:hover {
 			.diamond-icon {
@@ -116,20 +117,10 @@
 	}
 
 	&-secondary {
+		float: left;
 		color: @btn-secondary-color;
 		.diamond-icon {
 			background-color: @btn-secondary-color;
-			// height: 1.428em;
-			// width: 1.428em;
-
-			// margin-left: 1.428em;
-			// margin-top: .1em;
-
-			// .font-size(1.4);
-			// line-height: 1.428;
-			i {
-				// margin-top: .2em;
-			}
 		}
 		&:hover {
 			.diamond-icon {
@@ -142,7 +133,6 @@
 /* [Button QuickView]
 ==================================================*/
 .btn-quickview {
-	// bottom: 0;
 	left: 0;
 	position: absolute;
 	right: 0;
@@ -159,7 +149,6 @@
 
 .btn-icon {
 	margin-left: 1em;
-	// margin-top: -0.2em;
 	.font-size(1.4);
 	line-height: 0;
 }
