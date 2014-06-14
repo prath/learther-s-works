@@ -10,11 +10,28 @@
  */
 ?>
 
+<?php
+/**
+ * Hero Inner
+ * @return Template
+ */
+function hero_inner($wbg=true)
+{
+?>
 <div class="container hero inner">
 
 	<?php //Image ?>
+	<?php
+		if($wbg) {
+	?>
 	<img src="assets/front/dummy-images/slider/1.jpg" alt="slider">
+	<?php
+		}
+	?>
 	<?php //Hero Text ?>
 	<?php //Button CTA ?>
 
 </div>
+<?php
+}
+?>

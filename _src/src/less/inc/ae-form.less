@@ -128,12 +128,14 @@ output {
 	width: 100%;
 	padding: 8px 12px;
 	.font-size(1.2);
+	line-height: 1;
 	// line-height: @line-height-base;
 	// color: @input-color;
 	background-color: transparent;
 	background-image: none;
 	border: 1px solid @form-border-color;
 	.transition(~"border-color ease-in-out .15s, box-shadow ease-in-out .15s");
+	border-radius: 0;
 
 	.form-control-focus(@default-accent);
 
@@ -150,6 +152,10 @@ output {
 	textarea& {
 		height: auto;
 	}
+}
+
+select.form-control {
+	-webkit-appearance: none;
 }
 
 

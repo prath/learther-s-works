@@ -176,7 +176,8 @@ ul.three-cols {
 
 /*-----[Star Rating]-----*/
 ul.products li.product a .star-rating,
-.woocommerce .star-rating {
+.woocommerce .star-rating,
+.product .star-rating {
 	display: block;
 	float:none;
 	overflow: hidden;
@@ -395,5 +396,155 @@ ul.products li.product a .star-rating,
 			color: @secondary-accent;
 			border-color: @secondary-accent;
 		}
+	}
+}
+
+/* [Product]
+============================================================*/
+
+.product {
+	position: relative;
+
+	//*-----[Product Images]-----*/
+	a.woocommerce-main-image {
+		.clearfix();
+		display: block;
+		text-align: center;
+	}
+
+	.images {
+		position: relative;
+		margin-left: 8.333em;
+		margin-bottom: 4.1667em;
+		border-left: 1px solid @separator-color;
+	}
+
+	.thumbnails {
+		position: absolute;
+		top: 0;
+		left: -8.333em;
+		width: 8.333em;
+		text-align: center;
+
+		a {
+			.clearfix();
+			display: block;
+			width: 8.333em;
+			height: 8.333em;
+			padding-top: 1.667em;
+			padding-bottom: 1.667em;
+			text-align: center;
+			border-bottom: 1px solid @separator-color;
+			img {
+				height: 5em;
+				width: 5em;
+			}
+		}
+	}
+
+	//*-----[Product Summary]-----*/
+	.summary-two-col {
+		padding-top: 4.166em;
+		border-top: 1px solid @separator-color;
+	}
+
+	.price {
+		.font-size(2.4);
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		color: @heading-color;
+		del {
+			color: lighten(@btn-secondary-color, 20%);
+		}
+		ins {
+			text-decoration: none;
+		}
+	}
+
+	.star-rating {
+		margin-bottom: 0;
+		margin-left: 0;
+	}
+
+	.woocommerce-product-rating {
+		margin-bottom: 2.5em;
+	}
+
+	.variations {
+		width: 100%;
+		.label {
+			width: 10em;
+		}
+		.value {
+			padding-top: 1.5em;
+			.reset_variations {
+				font-style: italic;
+				display:block;
+				margin-top: .5em;
+			}
+		}
+	}
+
+	.variations_button {
+		margin-top: .5em;
+		margin-bottom: 1em;
+		padding-left: 10em;
+		position: relative;
+
+		label {
+			position: absolute;
+			top: .5em;
+			left: 0;
+		}
+
+		.quantity {
+			position: relative;
+			// padding-left: 2em;
+			// padding-right: 2em;
+			.clearfix();
+			.minus,
+			.plus {
+				position: absolute;
+				top: .4em;
+				box-shadow: none;
+				border: 0;
+				background: transparent;
+				.font-size(1.4);
+			}
+			.minus {
+				left: -1.5em;
+			}
+			.plus {
+				right: -1.5em;
+			}
+		}
+
+		button {
+			margin-top: 1em;
+			width: 100%;
+		}
+	}
+
+	.yith-wcwl-add-to-wishlist {
+		margin-left: 9em;
+		margin-top: 1.5em;
+		margin-bottom: 2.5em;
+	}
+
+	.product_meta {
+		.font-size(1.1);
+	}
+
+	//*-----[Product Tabs]-----*/
+	.woocommerce-tabs {
+		margin-top: 4.16em;
+		padding-top: 4.16em;
+		border-top: 1px solid @separator-color;
+	}
+
+	.w-sidebar {
+		border-right: 1px solid @separator-color;
+		padding-right: 4.166em;
 	}
 }

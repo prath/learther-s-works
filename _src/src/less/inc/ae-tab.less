@@ -1,0 +1,54 @@
+// -----------------------------------------------------------------
+// * [Tab Content Styles]
+// *
+// * @project Leather's Works Wordpress Theme
+// * @version 1.0.0
+// *
+// * @author Dwi A. Hambali <dwi@aestik.com>
+// * @author Pratama H. Salahudin <pratama@aestik.com>
+// -----------------------------------------------------------------
+
+/* [Tabs]
+==================================================*/
+.tab-vertical {
+	position: relative;
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		position: absolute;
+		top: 4.16em;
+		left: 0;
+		width: 16.667em;
+		li {
+			border-bottom: 1px solid @separator-color;
+			display: block;
+			padding-bottom: 1em;
+			padding-top: 1em;
+			a {
+				text-transform: uppercase;
+				.font-size(1);
+				font-weight: 700;
+				color: @heading-color;
+				&:hover {
+					color: @default-accent;
+				}
+			}
+			&.active {
+				a {
+					color: fade(@muted-text-color, 80%);
+				}
+			}
+		}
+	}
+	.panel {
+		min-height: 10em;
+		margin-left: 16.667em;
+		padding-left: 4.16em;
+		padding-bottom: 1em;
+		border-left: 1px solid @separator-color;
+		.tab-content-title {
+			margin-top: 0;
+		}
+	}
+}

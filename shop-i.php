@@ -19,6 +19,7 @@ include 'header.php';
 	?>
 	<?php
 	include '__partials/hero-inner.php';
+	hero_inner();
 	?>
 
 	<?php

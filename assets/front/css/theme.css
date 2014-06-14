@@ -20,9 +20,10 @@ Text Domain: leathers
  5. Icon
  6. Form
  7. Table
- 8. Code
- 9. Masthead
- 10. Navs
+ 8. Tabs
+ 9. Code
+ 10. Masthead
+ 11. Navs
  12. Post
  13. Widget
  14. Footer
@@ -602,6 +603,13 @@ h6
 {
     color: #c2bcb6;
 }
+.section-title.small
+{
+    font-size: 13px;
+    font-size: 1.3rem;
+
+    letter-spacing: 0;
+}
 /*-----[Article Excerpt Title]-----*/
 .excerpt-title
 {
@@ -916,6 +924,15 @@ img
 
     letter-spacing: 5px;
 }
+/* [Avatar]
+============================================================*/
+.avatar
+{
+    width: 5em;
+    height: 5em;
+
+    border-radius: 5em;
+}
 /*===============================================================================
  [5. ICON]
 ===============================================================================*/
@@ -1095,6 +1112,7 @@ output
 {
     font-size: 12px;
     font-size: 1.2rem;
+    line-height: 1;
 
     display: block;
 
@@ -1106,6 +1124,7 @@ output
             transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 
     border: 1px solid #cdc1b4;
+    border-radius: 0;
     background-color: transparent;
     background-image: none;
 }
@@ -1166,6 +1185,10 @@ fieldset[disabled] .form-control
 textarea.form-control
 {
     height: auto;
+}
+select.form-control
+{
+    -webkit-appearance: none;
 }
 input[type='search']
 {
@@ -1449,6 +1472,67 @@ select[multiple].input-lg
  [7. TABLE]
 ===============================================================================*/
 /*===============================================================================
+ [8. TABS]
+===============================================================================*/
+/* [Tabs]
+==================================================*/
+.tab-vertical
+{
+    position: relative;
+}
+.tab-vertical ul
+{
+    position: absolute;
+    top: 4.16em;
+    left: 0;
+
+    width: 16.667em;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+.tab-vertical ul li
+{
+    display: block;
+
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+    border-bottom: 1px solid #ccc;
+}
+.tab-vertical ul li a
+{
+    font-size: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    color: #342b22;
+}
+.tab-vertical ul li a:hover
+{
+    color: #e18734;
+}
+.tab-vertical ul li.active a
+{
+    color: rgba(157, 147, 139, .8);
+}
+.tab-vertical .panel
+{
+    min-height: 10em;
+    margin-left: 16.667em;
+    padding-bottom: 1em;
+    padding-left: 4.16em;
+
+    border-left: 1px solid #ccc;
+}
+.tab-vertical .panel .tab-content-title
+{
+    margin-top: 0;
+}
+/*===============================================================================
  [8. CODE]
 ===============================================================================*/
 /*===============================================================================
@@ -1717,6 +1801,8 @@ select[multiple].input-lg
     overflow: hidden;
 
     height: 9em;
+
+    background: #363636;
 }
 .shopping-cart
 {
@@ -2062,6 +2148,21 @@ select[multiple].input-lg
 {
     margin-left: .5em;
 }
+/* [Paging]
+==================================================*/
+.paging a
+{
+    position: absolute;
+    top: 28.5em;
+}
+.paging .prev
+{
+    left: 2em;
+}
+.paging .next
+{
+    right: 2em;
+}
 /*===============================================================================
  [12. POST]
 ===============================================================================*/
@@ -2251,6 +2352,170 @@ select[multiple].input-lg
 {
     margin-top: .5em;
     margin-bottom: .5em;
+}
+/* [Comment Posts and Product Review]
+============================================================*/
+.comments
+{
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+.comments .comment
+{
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+
+    border-bottom: 1px solid #ccc;
+}
+.comments .comment_container
+{
+    position: relative;
+}
+.comments .avatar
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.comments .comment-text
+{
+    position: relative;
+
+    padding-left: 6.667em;
+}
+.comments .comment-text .star-rating
+{
+    position: absolute;
+    top: .5em;
+    right: 0;
+}
+.comments .comment-text .meta time
+{
+    color: #9d938b;
+}
+#cancel-comment-reply-link
+{
+    font-style: italic;
+
+    margin-left: 2em;
+}
+.comment-respond
+{
+    margin-top: 4em;
+}
+.comment-form
+{
+    margin-top: 2.5em;
+}
+.comment-form label
+{
+    width: 10em;
+
+    vertical-align: top;
+}
+.comment-form .stars
+{
+    display: inline-block;
+  /* Fix for IE7 */
+    zoom: 1;
+
+    margin-left: 1em;
+
+  /* Fix for IE7 */
+    vertical-align: top;
+
+    *display: inline;
+}
+.comment-form .stars a
+{
+    font-size: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+
+    position: relative;
+
+    display: inline-block;
+
+    margin-right: 1em;
+
+    text-align: center;
+    text-indent: -9999px;
+
+    color: #9d938b;
+    border-right: 1px solid #ccc;
+    border-bottom: 0;
+}
+.comment-form .stars a:after
+{
+    font-family: 'FontAwesome';
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    text-indent: 0;
+}
+.comment-form .stars a:hover
+{
+    color: #514a42;
+}
+.comment-form .stars .star-1
+{
+    width: 2em;
+}
+.comment-form .stars .star-1:after
+{
+    content: '\f005';
+}
+.comment-form .stars .star-2
+{
+    width: 3em;
+}
+.comment-form .stars .star-2:after
+{
+    content: '\f005\f005';
+}
+.comment-form .stars .star-3
+{
+    width: 4em;
+}
+.comment-form .stars .star-3:after
+{
+    content: '\f005\f005\f005';
+}
+.comment-form .stars .star-4
+{
+    width: 5em;
+}
+.comment-form .stars .star-4:after
+{
+    content: '\f005\f005\f005\f005';
+}
+.comment-form .stars .star-5
+{
+    width: 6em;
+}
+.comment-form .stars .star-5:after
+{
+    content: '\f005\f005\f005\f005\f005';
+}
+.comment-form .comment-form-comment
+{
+    position: relative;
+
+    padding-left: 10em;
+}
+.comment-form .comment-form-comment label
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.comment-form .form-submit
+{
+    text-align: right;
 }
 /*===============================================================================
  [13. WIDGET]
@@ -2689,7 +2954,8 @@ ul.three-cols li:nth-child(3n+3):before
 }
 /*-----[Star Rating]-----*/
 ul.products li.product a .star-rating,
-.woocommerce .star-rating
+.woocommerce .star-rating,
+.product .star-rating
 {
     font-family: 'FontAwesome';
     font-size: 10px;
@@ -2707,7 +2973,8 @@ ul.products li.product a .star-rating,
     margin: 0 auto 1em;
 }
 ul.products li.product a .star-rating:before,
-.woocommerce .star-rating:before
+.woocommerce .star-rating:before,
+.product .star-rating:before
 {
     position: absolute;
     top: 0;
@@ -2720,7 +2987,8 @@ ul.products li.product a .star-rating:before,
     color: #ccc6c2;
 }
 ul.products li.product a .star-rating span,
-.woocommerce .star-rating span
+.woocommerce .star-rating span,
+.product .star-rating span
 {
     font-size: 10px;
     font-size: 1rem;
@@ -2737,7 +3005,8 @@ ul.products li.product a .star-rating span,
     color: #e18734;
 }
 ul.products li.product a .star-rating span:before,
-.woocommerce .star-rating span:before
+.woocommerce .star-rating span:before,
+.product .star-rating span:before
 {
     position: absolute;
     top: 0;
@@ -3001,6 +3270,256 @@ ul.products li.product a .star-rating span:before,
 {
     color: #97887f;
     border-color: #97887f;
+}
+/* [Product]
+============================================================*/
+.product
+{
+    position: relative;
+}
+.product a.woocommerce-main-image
+{
+    display: block;
+
+    text-align: center;
+
+    *zoom: 1;
+}
+.product a.woocommerce-main-image:before,
+.product a.woocommerce-main-image:after
+{
+    display: table;
+
+    content: ' ';
+}
+.product a.woocommerce-main-image:after
+{
+    clear: both;
+}
+.product a.woocommerce-main-image:before,
+.product a.woocommerce-main-image:after
+{
+    line-height: 0;
+
+    display: table;
+
+    content: '';
+}
+.product a.woocommerce-main-image:after
+{
+    clear: both;
+}
+.product .images
+{
+    position: relative;
+
+    margin-bottom: 4.1667em;
+    margin-left: 8.333em;
+
+    border-left: 1px solid #ccc;
+}
+.product .thumbnails
+{
+    position: absolute;
+    top: 0;
+    left: -8.333em;
+
+    width: 8.333em;
+
+    text-align: center;
+}
+.product .thumbnails a
+{
+    display: block;
+
+    width: 8.333em;
+    height: 8.333em;
+    padding-top: 1.667em;
+    padding-bottom: 1.667em;
+
+    text-align: center;
+
+    border-bottom: 1px solid #ccc;
+
+    *zoom: 1;
+}
+.product .thumbnails a:before,
+.product .thumbnails a:after
+{
+    display: table;
+
+    content: ' ';
+}
+.product .thumbnails a:after
+{
+    clear: both;
+}
+.product .thumbnails a:before,
+.product .thumbnails a:after
+{
+    line-height: 0;
+
+    display: table;
+
+    content: '';
+}
+.product .thumbnails a:after
+{
+    clear: both;
+}
+.product .thumbnails a img
+{
+    width: 5em;
+    height: 5em;
+}
+.product .summary-two-col
+{
+    padding-top: 4.166em;
+
+    border-top: 1px solid #ccc;
+}
+.product .price
+{
+    font-size: 24px;
+    font-size: 2.4rem;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: #342b22;
+}
+.product .price del
+{
+    color: #ccc6c2;
+}
+.product .price ins
+{
+    text-decoration: none;
+}
+.product .star-rating
+{
+    margin-bottom: 0;
+    margin-left: 0;
+}
+.product .woocommerce-product-rating
+{
+    margin-bottom: 2.5em;
+}
+.product .variations
+{
+    width: 100%;
+}
+.product .variations .label
+{
+    width: 10em;
+}
+.product .variations .value
+{
+    padding-top: 1.5em;
+}
+.product .variations .value .reset_variations
+{
+    font-style: italic;
+
+    display: block;
+
+    margin-top: .5em;
+}
+.product .variations_button
+{
+    position: relative;
+
+    margin-top: .5em;
+    margin-bottom: 1em;
+    padding-left: 10em;
+}
+.product .variations_button label
+{
+    position: absolute;
+    top: .5em;
+    left: 0;
+}
+.product .variations_button .quantity
+{
+    position: relative;
+
+    *zoom: 1;
+}
+.product .variations_button .quantity:before,
+.product .variations_button .quantity:after
+{
+    display: table;
+
+    content: ' ';
+}
+.product .variations_button .quantity:after
+{
+    clear: both;
+}
+.product .variations_button .quantity:before,
+.product .variations_button .quantity:after
+{
+    line-height: 0;
+
+    display: table;
+
+    content: '';
+}
+.product .variations_button .quantity:after
+{
+    clear: both;
+}
+.product .variations_button .quantity .minus,
+.product .variations_button .quantity .plus
+{
+    font-size: 14px;
+    font-size: 1.4rem;
+
+    position: absolute;
+    top: .4em;
+
+    border: 0;
+    background: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+.product .variations_button .quantity .minus
+{
+    left: -1.5em;
+}
+.product .variations_button .quantity .plus
+{
+    right: -1.5em;
+}
+.product .variations_button button
+{
+    width: 100%;
+    margin-top: 1em;
+}
+.product .yith-wcwl-add-to-wishlist
+{
+    margin-top: 1.5em;
+    margin-bottom: 2.5em;
+    margin-left: 9em;
+}
+.product .product_meta
+{
+    font-size: 11px;
+    font-size: 1.1rem;
+}
+.product .woocommerce-tabs
+{
+    margin-top: 4.16em;
+    padding-top: 4.16em;
+
+    border-top: 1px solid #ccc;
+}
+.product .w-sidebar
+{
+    padding-right: 4.166em;
+
+    border-right: 1px solid #ccc;
 }
 /*===============================================================================
  [16. MISC]

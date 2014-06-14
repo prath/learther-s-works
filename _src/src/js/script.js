@@ -102,11 +102,24 @@
 				$('.form-search').addClass('search-toggle');
 				$('.form-search .form-control').focus();
 			}
-			// if (!$(e.target).is('.icon-menu, .main-nav *')) {
-			// 	console.log(e.target);
-			// 	menu.removeClass('menu-toggle');
-			// 	$('.main-nav').addClass('menu-toggle');
-			// }
+		});
+
+		$('#tab-reviews').hide();
+		$('.description_tab').addClass('active');
+		$('.woocommerce-tabs .tabs a').click(function(e) {
+			e.preventDefault();
+			var target = $(this).attr('href');
+			var parent = $(this).parent('li');
+			if (parent.hasClass('active')) {
+				return;
+			} else {
+				$(this).parent('li').siblings().removeClass('active');
+				$(this).parent('li').addClass('active');
+				$('.panel').fadeOut(300, function() {
+					$(target).fadeIn();
+				});
+
+			}
 		});
 
 	});
