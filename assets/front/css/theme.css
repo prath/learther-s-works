@@ -512,6 +512,10 @@ ul.three-cols li:nth-child(3n+3):before
 
     border-right: 1px solid #ccc;
 }
+.w-sidebar-full
+{
+    border-right: 1px solid #ccc;
+}
 /* [Helper Classes]
 ============================================================*/
 /*-----[override bottom padding to 50px]-----*/
@@ -3030,6 +3034,11 @@ header .entry-title a
     padding-bottom: 0;
 
     border-bottom: 0;
+}
+.google-map
+{
+    height: 30em;
+    margin-bottom: 3.57em;
 }
 /*===============================================================================
  [13. WIDGET]

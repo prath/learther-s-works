@@ -17,7 +17,7 @@ include 'header.php';
 		 */
 	?>
 	<?php
-	include '__partials/hero-inner.php';
+	include 'parts/hero-inner.php';
 	hero_inner(false);
 	?>
 

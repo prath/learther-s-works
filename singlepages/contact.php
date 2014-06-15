@@ -12,7 +12,7 @@
 <div class="blog-entry">
 
 	<div class="entry-content">
-		<img src="assets/front/dummy-images/blog/med1.jpg" alt="">
+		<div id="map-canvas" class="google-map"></div>
 	</div>
 
 </div>
@@ -79,7 +79,7 @@
 
 			<p class="comment-form-comment">
 				<label for="comment">Message</label>
-				<textarea id="comment" class="form-control" aria-required="true" rows="8" cols="45" name="comment" placeholder="Your Comment"></textarea>
+				<textarea id="comment" class="form-control" aria-required="true" rows="8" cols="45" name="comment" placeholder="Your Message"></textarea>
 			</p>
 
 			<p class="form-submit">

@@ -18,7 +18,7 @@ include 'header.php';
 		 */
 	?>
 	<?php
-	include '__partials/hero-inner.php';
+	include 'parts/hero-inner.php';
 	hero_inner();
 	?>
 
@@ -36,7 +36,7 @@ include 'header.php';
 		 * Next-Prev Item Paging
 		 */
 	?>
-	<?php include '__partials/paging.php'; ?>
+	<?php include 'parts/paging.php'; ?>
 
 	<?php
 		/**
@@ -51,13 +51,14 @@ include 'header.php';
 			 */
 		?>
 		<div class="product">
+
 			<div class="wrapper">
 				<div class="row-stretched">
 
 					<div class="col-md-9 w-sidebar">
-						<?php include '__partials/woo-images.php'; ?>
-						<?php include '__partials/woo-summary-i.php'; ?>
-						<?php include '__partials/woo-tabs.php'; ?>
+						<?php include 'woo/woo-images.php'; ?>
+						<?php include 'woo/woo-summary-i.php'; ?>
+						<?php include 'woo/woo-tabs.php'; ?>
 					</div>
 
 					<aside class="col-md-3 sidebar">
@@ -70,23 +71,21 @@ include 'header.php';
 				</div>
 			</div>
 
+			<?php
+				/**
+				 * Related Product
+				 */
+			?>
 			<div class="related products">
 				<div class="wrapper">
 					<h2 class="section-title">
 						related products
 					</h2>
 				</div>
-				<?php include '__partials/products-three-items.php'; ?>
+				<?php include 'woo/products-three-items.php'; ?>
 			</div>
 
 		</div>
-
-		<?php
-			/**
-			 * Related Product
-			 */
-		?>
-
 
 	</div>
 
@@ -96,7 +95,7 @@ include 'header.php';
 		 */
 	?>
 	<div class="container">
-		<?php include '__partials/email-subscribe.php'; ?>
+		<?php include 'parts/email-subscribe.php'; ?>
 	</div>
 
 </main>

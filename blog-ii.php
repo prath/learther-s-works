@@ -18,7 +18,7 @@ include 'header.php';
 		 */
 	?>
 	<?php
-	include '__partials/hero-inner.php';
+	include 'parts/hero-inner.php';
 	hero_inner();
 	?>
 
@@ -43,7 +43,15 @@ include 'header.php';
 			 * Product List including Pagination and Filter
 			 */
 		?>
-		<?php include '__partials/blog-items-standard.php'; ?>
+		<?php include 'blogs/blog-entries-standard.php'; ?>
+
+		<?php
+			/**
+			 * Pagination
+			 */
+		?>
+		<?php include 'parts/pagination.php'; ?>
+
 	</div>
 
 	<?php
@@ -52,7 +60,7 @@ include 'header.php';
 		 */
 	?>
 	<div class="container">
-		<?php include '__partials/email-subscribe.php'; ?>
+		<?php include 'parts/email-subscribe.php'; ?>
 	</div>
 
 </main>

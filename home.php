@@ -55,7 +55,7 @@ include 'header.php';
 			<div class="col-md-12 VC-SPAN">
 				<div class="VC-WRAPPER">
 
-					<?php include '__partials/products-three-items.php'; ?>
+					<?php include 'woo/products-three-items.php'; ?>
 
 				</div>
 			</div>
@@ -70,7 +70,7 @@ include 'header.php';
 			<div class="VC-SPAN">
 				<div class="VC-WRAPPER">
 
-					<?php include '__partials/email-subscribe.php'; ?>
+					<?php include 'parts/email-subscribe.php'; ?>
 
 				</div>
 			</div>

@@ -1,6 +1,6 @@
 <?php
 /**
- * Partial Woo Summary
+ * Partial Woo Summary Two Column
  *
  * @package leathers
  * @author  Aestik <root@aestik.com>

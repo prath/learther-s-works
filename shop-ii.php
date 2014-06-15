@@ -18,7 +18,7 @@ include 'header.php';
 		 */
 	?>
 	<?php
-	include '__partials/hero-inner.php';
+	include 'parts/hero-inner.php';
 	hero_inner();
 	?>
 
@@ -37,15 +37,29 @@ include 'header.php';
 		 */
 	?>
 	<div class="container main-content">
-		<div class="row">
 
-			<?php
-				/**
-				 * Product List including Pagination and Filter
-				 */
-			?>
-			<div class="col-md-9">
-				<?php include '__partials/products-twelve-items.php'; ?>
+		<div class="row">
+			<div class="col-md-9 w-sidebar-full">
+
+				<?php
+					/**
+					 * Filter and page numbers
+					 */
+				?>
+				<?php include 'woo/filter.php'; ?>
+				<?php
+					/**
+					 * Product List 12 items
+					 */
+				?>
+				<?php include 'woo/products-twelve-items.php'; ?>
+				<?php
+					/**
+					 * Pagination
+					 */
+				?>
+				<?php include 'parts/pagination.php'; ?>
+
 			</div>
 
 			<?php
@@ -60,6 +74,7 @@ include 'header.php';
 				<?php widget_featured_products();?>
 			</aside>
 		</div>
+
 	</div>
 
 	<?php
@@ -68,7 +83,7 @@ include 'header.php';
 		 */
 	?>
 	<div class="container">
-		<?php include '__partials/email-subscribe.php'; ?>
+		<?php include 'parts/email-subscribe.php'; ?>
 	</div>
 
 </main>

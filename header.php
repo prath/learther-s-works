@@ -11,15 +11,15 @@
  */
 
 // requires woocommerce widgets mixins/function.
-require_once('__widgets/woo.php');
+require_once('widgets/woo.php');
 // requires wordpress widgets mixins/function.
-require_once('__widgets/wp.php');
+require_once('widgets/wp.php');
 // requires aestik widgets mixins/function.
-require_once('__widgets/ae.php');
+require_once('widgets/ae.php');
 // requires Page Title.
-require_once('__partials/page-title.php');
+require_once('parts/page-title.php');
 // requires Breadcrumbs
-require_once('__partials/breadcrumbs.php');
+require_once('parts/breadcrumbs.php');
 
 
 ?>
@@ -127,7 +127,7 @@ require_once('__partials/breadcrumbs.php');
 			 */
 		?>
 		<?php
-		include '__partials/menu.php';
+		include 'parts/menu.php';
 		?>
 
 		<?php

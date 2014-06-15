@@ -18,7 +18,7 @@ include 'header.php';
 		 */
 	?>
 	<?php
-	include '__partials/hero-inner.php';
+	include 'parts/hero-inner.php';
 	hero_inner();
 	?>
 
@@ -36,7 +36,7 @@ include 'header.php';
 		 * Next-Prev Item Paging
 		 */
 	?>
-	<?php include '__partials/paging.php'; ?>
+	<?php include 'parts/paging.php'; ?>
 
 	<?php
 		/**
@@ -50,7 +50,8 @@ include 'header.php';
 			 * Product List including Pagination and Filter
 			 */
 		?>
-		<?php include '__partials/blog-post.php'; ?>
+		<?php include 'singlepages/blog-single.php'; ?>
+
 	</div>
 
 	<?php
@@ -59,7 +60,7 @@ include 'header.php';
 		 */
 	?>
 	<div class="container">
-		<?php include '__partials/email-subscribe.php'; ?>
+		<?php include 'parts/email-subscribe.php'; ?>
 	</div>
 
 </main>

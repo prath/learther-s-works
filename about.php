@@ -1,6 +1,6 @@
 <?php
 /**
- * Blog-single-i Page
+ * About Page
  *
  * @package leathers
  * @author  Aestik <root@aestik.com>
@@ -28,7 +28,7 @@ include 'header.php';
 		 */
 	?>
 	<?php
-	page_title('Contact', '', 'Contact');
+	page_title('About', '', 'About');
 	?>
 
 	<?php
@@ -38,23 +38,12 @@ include 'header.php';
 	?>
 	<div class="container main-content wrapper">
 
-		<div class="row-stretched">
-			<div class="col-md-9 w-sidebar">
-
-				<?php
-					/**
-					 * Product List including Pagination and Filter
-					 */
-				?>
-				<?php include 'singlepages/contact.php'; ?>
-
-			</div>
-			<aside class="col-md-3 sidebar">
-				<?php widget_nav_menu();?>
-				<?php widget_popular_posts();?>
-				<?php widget_tags();?>
-			</aside>
-		</div>
+		<?php
+			/**
+			 * Product List including Pagination and Filter
+			 */
+		?>
+		<?php include 'singlepages/about.php'; ?>
 
 	</div>
 

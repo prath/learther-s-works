@@ -30,7 +30,7 @@
 		 * Fitvids
 		 */
 		if ($('.fitvids').length) {
-			$(".fitvids").fitVids();
+			$('.fitvids').fitVids();
 		}
 
 		/**
@@ -128,6 +128,55 @@
 
 			}
 		});
+
+		/**
+		 * Google Map
+		 */
+		if ($('#map-canvas').length) {
+			var mapOptions,
+				map;
+			if (Modernizr.touch) {
+				mapOptions = {
+					zoom: 15,
+					scrollwheel: false,
+					draggable: false,
+					center: new google.maps.LatLng(40.64432, -74.01107),
+					// zoomControl: true,
+					zoomControlOptions: {
+						style: google.maps.ZoomControlStyle.SMALL,
+						position: google.maps.ControlPosition.LEFT_TOP
+					},
+					// scaleControl: false,
+					scaleControlOptions: {
+						position: google.maps.ControlPosition.BOTTOM_LEFT
+					},
+					streetViewControl: false,
+					panControl: false,
+					mapTypeControl: false,
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+				};
+			} else {
+				mapOptions = {
+					zoom: 15,
+					scrollwheel: false,
+					center: new google.maps.LatLng(40.64432, -74.01107),
+					// zoomControl: true,
+					zoomControlOptions: {
+						style: google.maps.ZoomControlStyle.SMALL,
+						position: google.maps.ControlPosition.LEFT_TOP
+					},
+					// scaleControl: false,
+					scaleControlOptions: {
+						position: google.maps.ControlPosition.BOTTOM_LEFT
+					},
+					streetViewControl: false,
+					panControl: false,
+					mapTypeControl: false,
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+				};
+			}
+			map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+		}
 
 	});
 

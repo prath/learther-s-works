@@ -17,7 +17,7 @@ include 'header.php';
 		 */
 	?>
 	<?php
-	include '__partials/hero-inner.php';
+	include 'parts/hero-inner.php';
 	hero_inner(false);
 	?>
 
@@ -46,7 +46,7 @@ include 'header.php';
 			<div class="col-md-12 VC-SPAN">
 				<div class="VC-WRAPPER">
 
-					<?php include '__partials/products-six-items.php'; ?>
+					<?php include 'woo/products-six-items.php'; ?>
 
 				</div>
 			</div>
@@ -61,7 +61,7 @@ include 'header.php';
 			<div class="VC-SPAN">
 				<div class="VC-WRAPPER">
 
-					<?php include '__partials/email-subscribe.php'; ?>
+					<?php include 'parts/email-subscribe.php'; ?>
 
 				</div>
 			</div>

@@ -107,5 +107,3 @@
 	</li>
 
 </ul>
-
-<?php include '__partials/pagination.php'; ?>

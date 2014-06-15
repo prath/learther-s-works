@@ -1,6 +1,6 @@
 <?php
 /**
- * Partial Products Twelve Items
+ * Partial Products Six Items
  *
  * @package leathers
  * @author  Aestik <root@aestik.com>

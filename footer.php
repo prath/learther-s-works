@@ -75,6 +75,7 @@
 
 		<script src="assets/front/js/vendor/waypoints.min.js"></script>
 		<script src="assets/front/js/vendor/jquery.fitvids.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 		<script src="assets/front/js/script.min.js"></script>
 
 		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
