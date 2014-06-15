@@ -506,6 +506,12 @@ ul.three-cols li:nth-child(3n+3):before
 {
     background-color: transparent;
 }
+.w-sidebar
+{
+    padding-right: 4.166em !important;
+
+    border-right: 1px solid #ccc;
+}
 /* [Helper Classes]
 ============================================================*/
 /*-----[override bottom padding to 50px]-----*/
@@ -2721,6 +2727,10 @@ ul.blog-entries
 {
     margin-bottom: 3.57em;
 }
+.blog-entry img:last-child
+{
+    margin-bottom: 0;
+}
 .blog-entry * + img
 {
     margin-top: 3.57em;
@@ -3983,12 +3993,6 @@ ul.products li.product a .star-rating span:before,
     padding-top: 4.16em;
 
     border-top: 1px solid #ccc;
-}
-.product .w-sidebar
-{
-    padding-right: 4.166em;
-
-    border-right: 1px solid #ccc;
 }
 /*===============================================================================
  [16. MISC]
