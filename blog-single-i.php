@@ -28,8 +28,15 @@ include 'header.php';
 		 */
 	?>
 	<?php
-	page_title('An Introduction to WooCommerce.', 'Blog', 'An Introduction to WooCommerce.');
+	page_title_blog('An Introduction to WooCommerce.', 'Blog', 'An Introduction to WooCommerce.');
 	?>
+
+	<?php
+		/**
+		 * Next-Prev Item Paging
+		 */
+	?>
+	<?php include '__partials/paging.php'; ?>
 
 	<?php
 		/**
@@ -43,7 +50,7 @@ include 'header.php';
 			 * Product List including Pagination and Filter
 			 */
 		?>
-		<?php include '__partials/blog-items-standard.php'; ?>
+		<?php include '__partials/blog-post.php'; ?>
 	</div>
 
 	<?php

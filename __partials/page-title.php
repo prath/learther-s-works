@@ -47,3 +47,28 @@ function page_title_home($title='', $subtitle='')
 <?php
 }
 ?>
+
+<?php
+/**
+ * Page Title
+ * @return Template
+ */
+function page_title_blog($title='', $breadcrumbs1='', $breadcrumbs2='')
+{
+?>
+<header class="page-title">
+	<?php breadcrumbs($breadcrumbs1, $breadcrumbs2);?>
+	<h1>
+		<?php echo $title;?>
+	</h1>
+	<div class="entry-meta">
+		<time class="post-date" datetime="2014-06-06T13:02:22+00:00">June 6, 2014</time>
+		by&nbsp;
+		<a href="">John William Doe&nbsp;</a>
+	</div>
+	<div class="title-separator">
+	</div>
+</header>
+<?php
+}
+?>
