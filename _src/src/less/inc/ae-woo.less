@@ -466,28 +466,6 @@ ul.products li.product a .star-rating,
 			left: 0;
 		}
 
-		.quantity {
-			position: relative;
-			// padding-left: 2em;
-			// padding-right: 2em;
-			.clearfix();
-			.minus,
-			.plus {
-				position: absolute;
-				top: .4em;
-				box-shadow: none;
-				border: 0;
-				background: transparent;
-				.font-size(1.4);
-			}
-			.minus {
-				left: -1.5em;
-			}
-			.plus {
-				right: -1.5em;
-			}
-		}
-
 		button {
 			margin-top: 1em;
 			width: 100%;
@@ -510,4 +488,83 @@ ul.products li.product a .star-rating,
 		padding-top: 4.16em;
 		border-top: 1px solid @separator-color;
 	}
+}
+
+.quantity {
+	position: relative;
+	// padding-left: 2em;
+	// padding-right: 2em;
+	.clearfix();
+	.minus,
+	.plus {
+		position: absolute;
+		top: .4em;
+		box-shadow: none;
+		border: 0;
+		background: transparent;
+		.font-size(1.4);
+	}
+	.minus {
+		left: -1.5em;
+	}
+	.plus {
+		right: -1.5em;
+	}
+}
+
+table.cart {
+
+	.product-quantity {
+		.quantity {
+			width: 30%;
+			.form-control {
+				width: 100%;
+			}
+		}
+	}
+
+	.product-remove {
+		.remove {
+			i {
+				color: @default-text;
+			}
+		}
+	}
+
+	.product-name {
+		a {
+			color: @default-text;
+		}
+	}
+
+	.coupon {
+		float: left;
+	}
+
+	.actions {
+		text-align: right;
+	}
+
+	tr:last-child {
+		td {
+			border-bottom: 0;
+		}
+	}
+}
+
+.cart_totals {
+	table > tbody > tr.order-total {
+		> th,
+		> td {
+			border-bottom: 1px solid @default-accent;
+			.amount {
+				color: @default-accent;
+			}
+		}
+	}
+}
+
+.attachment-shop_thumbnail {
+	height: 3em;
+	width: 3em;
 }

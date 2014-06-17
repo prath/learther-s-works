@@ -355,7 +355,7 @@ hr
 
     text-transform: uppercase;
 
-    border-top: 1px dotted #484038;
+    border-top: 1px dotted #342b22;
 
     *zoom: 1;
 }
@@ -675,6 +675,10 @@ h6
 
     color: #342b22;
     border: 0;
+}
+.section-title.dark a
+{
+    color: #342b22;
 }
 .section-title.invert
 {
@@ -1557,6 +1561,54 @@ select[multiple].input-lg
 /*===============================================================================
  [7. TABLE]
 ===============================================================================*/
+/* [Default Table]
+==================================================*/
+table
+{
+    width: 100%;
+    margin-bottom: 2.5em;
+}
+table > thead > tr > th,
+table > tbody > tr > th,
+table > tfoot > tr > th,
+table > thead > tr > td,
+table > tbody > tr > td,
+table > tfoot > tr > td
+{
+    line-height: 1.5;
+
+    padding: 1.667em;
+
+    text-align: left;
+    vertical-align: middle;
+
+    border-bottom: 1px solid rgba(204, 204, 204, .6);
+}
+table > thead > tr > th,
+table > tbody > tr > th,
+table > tfoot > tr > th
+{
+    padding: 1em 1.667em;
+}
+table > thead > tr > th
+{
+    padding: 1em 1.667em;
+
+    vertical-align: bottom;
+
+    border-top: 1px solid #342b22;
+    border-bottom: 1px solid #342b22;
+}
+table > caption + thead > tr:first-child > td,
+table > colgroup + thead > tr:first-child > td,
+table > thead:first-child > tr:first-child > td
+{
+    border-top: 0;
+}
+table > tbody + tbody
+{
+    border-top: 2px solid #ccc;
+}
 /*===============================================================================
  [8. TABS]
 ===============================================================================*/
@@ -2317,7 +2369,7 @@ select[multiple].input-lg
          -o-transform: rotate(-45deg);
             transform: rotate(-45deg);
 
-    border: 1px solid #68625b;
+    border: 1px solid #342b22;
     background: transparent;
 }
 .page-title .title-separator:after
@@ -2334,7 +2386,7 @@ select[multiple].input-lg
 
     content: '';
 
-    background: #68625b;
+    background: #342b22;
 }
 .page-title .subtitle
 {
@@ -3928,58 +3980,6 @@ ul.products li.product a .star-rating span:before,
     top: .5em;
     left: 0;
 }
-.product .variations_button .quantity
-{
-    position: relative;
-
-    *zoom: 1;
-}
-.product .variations_button .quantity:before,
-.product .variations_button .quantity:after
-{
-    display: table;
-
-    content: ' ';
-}
-.product .variations_button .quantity:after
-{
-    clear: both;
-}
-.product .variations_button .quantity:before,
-.product .variations_button .quantity:after
-{
-    line-height: 0;
-
-    display: table;
-
-    content: '';
-}
-.product .variations_button .quantity:after
-{
-    clear: both;
-}
-.product .variations_button .quantity .minus,
-.product .variations_button .quantity .plus
-{
-    font-size: 14px;
-    font-size: 1.4rem;
-
-    position: absolute;
-    top: .4em;
-
-    border: 0;
-    background: transparent;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-}
-.product .variations_button .quantity .minus
-{
-    left: -1.5em;
-}
-.product .variations_button .quantity .plus
-{
-    right: -1.5em;
-}
 .product .variations_button button
 {
     width: 100%;
@@ -4002,6 +4002,101 @@ ul.products li.product a .star-rating span:before,
     padding-top: 4.16em;
 
     border-top: 1px solid #ccc;
+}
+.quantity
+{
+    position: relative;
+
+    *zoom: 1;
+}
+.quantity:before,
+.quantity:after
+{
+    display: table;
+
+    content: ' ';
+}
+.quantity:after
+{
+    clear: both;
+}
+.quantity:before,
+.quantity:after
+{
+    line-height: 0;
+
+    display: table;
+
+    content: '';
+}
+.quantity:after
+{
+    clear: both;
+}
+.quantity .minus,
+.quantity .plus
+{
+    font-size: 14px;
+    font-size: 1.4rem;
+
+    position: absolute;
+    top: .4em;
+
+    border: 0;
+    background: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+.quantity .minus
+{
+    left: -1.5em;
+}
+.quantity .plus
+{
+    right: -1.5em;
+}
+table.cart .product-quantity .quantity
+{
+    width: 30%;
+}
+table.cart .product-quantity .quantity .form-control
+{
+    width: 100%;
+}
+table.cart .product-remove .remove i
+{
+    color: #514a42;
+}
+table.cart .product-name a
+{
+    color: #514a42;
+}
+table.cart .coupon
+{
+    float: left;
+}
+table.cart .actions
+{
+    text-align: right;
+}
+table.cart tr:last-child td
+{
+    border-bottom: 0;
+}
+.cart_totals table > tbody > tr.order-total > th,
+.cart_totals table > tbody > tr.order-total > td
+{
+    border-bottom: 1px solid #e18734;
+}
+.cart_totals table > tbody > tr.order-total > th .amount,
+.cart_totals table > tbody > tr.order-total > td .amount
+{
+    color: #e18734;
+}
+.attachment-shop_thumbnail
+{
+    width: 3em;
+    height: 3em;
 }
 /*===============================================================================
  [16. MISC]

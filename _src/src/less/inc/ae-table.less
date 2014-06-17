@@ -12,31 +12,43 @@
 ==================================================*/
 table {
 	width: 100%;
-	margin-bottom: 30px;
+	margin-bottom: 2.5em;
 	> thead,
 	> tbody,
 	> tfoot {
 		> tr {
 			> th,
 			> td {
-				padding: @table-cell-padding;
+				padding: 1.667em;
 				line-height: @lh-1-2;
-				vertical-align: top;
-				border-top: 1px solid @table-border-color;
+				vertical-align: middle;
+				text-align: left;
+				border-bottom: 1px solid fade(@table-border-color, 60%);
+			}
+		}
+	}
+
+	> thead,
+	> tbody,
+	> tfoot {
+		> tr {
+			> th {
+				padding: 1em 1.667em;
 			}
 		}
 	}
 
 	> thead > tr > th {
+		padding: 1em 1.667em;
 		vertical-align: bottom;
-		border-bottom: 1px solid @default-accent;
+		border-bottom: 1px solid @special-separator-color;
+		border-top: 1px solid @special-separator-color;
 	}
 
 	> caption + thead,
 	> colgroup + thead,
 	> thead:first-child {
 		> tr:first-child {
-			> th,
 			> td {
 				border-top: 0;
 			}
