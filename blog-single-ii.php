@@ -1,6 +1,6 @@
 <?php
 /**
- * Blog-single-i Page
+ * Blog-single-ii Page
  *
  * @package leathers
  * @author  Aestik <root@aestik.com>
@@ -10,25 +10,13 @@
 include 'header.php';
 ?>
 
-<main role="main">
-
 	<?php
 		/**
-		 * Header BG
+		 * loc : parts/page-title.php
+		 *
+		 * ini nantinya akan ada di header.php
 		 */
-	?>
-	<?php
-	include 'parts/hero-inner.php';
-	hero_inner();
-	?>
-
-	<?php
-		/**
-		 * Page title, Breadcrumbs and Title Separator
-		 */
-	?>
-	<?php
-	page_title_blog('An Introduction to WooCommerce.', 'Blog', 'An Introduction to WooCommerce.');
+		page_title_blog('An Introduction to WooCommerce.', 'Blog', 'An Introduction to WooCommerce.');
 	?>
 
 	<?php
@@ -36,46 +24,38 @@ include 'header.php';
 		 * Next-Prev Item Paging
 		 */
 	?>
-	<?php include 'parts/paging.php'; ?>
-
 	<?php
-		/**
-		 * Main Content
-		 */
+		include 'parts/paging.php';
 	?>
-	<div class="container main-content wrapper">
 
-		<div class="row-stretched">
-			<div class="col-md-9 w-sidebar">
+	<?php //--- wrapper-start blog-single with sidebar template ?>
+	<div class="container main-content">
+		<div class="wrapper">
+	<?php //--- wrapper-start ?>
 
-				<?php
-					/**
-					 * Product List including Pagination and Filter
-					 */
-				?>
-				<?php include 'singlepages/blog-single.php'; ?>
+			<div class="row-stretched">
+				<div class="col-md-9 w-sidebar">
 
+					<?php
+						/**
+						 * Blog single template
+						 */
+					?>
+					<?php include 'page-templates/blog-single.php'; ?>
+
+				</div>
+				<aside class="col-md-3 sidebar">
+					<?php widget_nav_menu();?>
+					<?php widget_popular_posts();?>
+					<?php widget_tags();?>
+					<?php widget_rss();?>
+				</aside>
 			</div>
-			<aside class="col-md-3 sidebar">
-				<?php widget_nav_menu();?>
-				<?php widget_popular_posts();?>
-				<?php widget_tags();?>
-				<?php widget_rss();?>
-			</aside>
+
+	<?php //--- wrapper-end blog-single with sidebar template ?>
 		</div>
-
 	</div>
-
-	<?php
-		/**
-		 * Email Subscribe
-		 */
-	?>
-	<div class="container">
-		<?php include 'parts/email-subscribe.php'; ?>
-	</div>
-
-</main>
+	<?php //--- wrapper-end ?>
 
 <?php
 include 'footer.php';

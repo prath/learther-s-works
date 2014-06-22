@@ -8,7 +8,7 @@
  */
 ?>
 
-<article class="format-gallery blog-entry">
+<div class="format-gallery blog-entry">
 
 	<img class="featured-image" src="assets/front/dummy-images/blog/med1.jpg" alt="">
 
@@ -36,4 +36,4 @@
 			Read More<span class="diamond-icon"><i class="dripicon dripicon-chevron-right"></i></span>
 		</a>
 	</div>
-</article>
+</div>

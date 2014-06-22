@@ -1,6 +1,6 @@
 <?php
 /**
- * Blog-single-i Page
+ * Contact Page
  *
  * @package leathers
  * @author  Aestik <root@aestik.com>
@@ -10,64 +10,31 @@
 include 'header.php';
 ?>
 
-<main role="main">
-
 	<?php
 		/**
-		 * Header BG
+		 * loc : parts/page-title.php
+		 *
+		 * ini nantinya akan ada di header.php
 		 */
-	?>
-	<?php
-	include 'parts/hero-inner.php';
-	hero_inner();
+		page_title('Contact', '', 'Contact');
 	?>
 
-	<?php
-		/**
-		 * Page title, Breadcrumbs and Title Separator
-		 */
-	?>
-	<?php
-	page_title('Contact', '', 'Contact');
-	?>
+	<?php //--- wrapper-start default template ?>
+	<div class="container main-content">
+		<div class="wrapper-narrow">
+	<?php //--- wrapper-start ?>
 
-	<?php
-		/**
-		 * Main Content
-		 */
-	?>
-	<div class="container main-content wrapper">
+			<?php
+				/**
+				 * Contact Template
+				 */
+			?>
+			<?php include 'page-templates/contact.php'; ?>
 
-		<div class="row-stretched">
-			<div class="col-md-9 w-sidebar">
-
-				<?php
-					/**
-					 * Product List including Pagination and Filter
-					 */
-				?>
-				<?php include 'singlepages/contact.php'; ?>
-
-			</div>
-			<aside class="col-md-3 sidebar">
-				<?php widget_nav_menu();?>
-				<?php widget_popular_posts();?>
-				<?php widget_tags();?>
-			</aside>
+	<?php //--- wrapper-end default template ?>
 		</div>
-
 	</div>
-
-	<?php
-		/**
-		 * Email Subscribe
-		 */
-	?>
-	<div class="container">
-		<?php include 'parts/email-subscribe.php'; ?>
-	</div>
-
-</main>
+	<?php //--- wrapper-end ?>
 
 <?php
 include 'footer.php';

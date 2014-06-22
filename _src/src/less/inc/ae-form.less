@@ -20,7 +20,7 @@
 // Restyle and baseline non-control form elements.
 
 fieldset {
-	padding: 0;
+	padding: 2em;
 	margin: 0;
 	border: 0;
 	// Chrome and Firefox set a `min-width: -webkit-min-content;` on fieldsets,
@@ -32,13 +32,14 @@ fieldset {
 legend {
 	display: block;
 	width: 100%;
-	padding: 0;
-	margin-bottom: @line-height-computed;
-	font-size: (@font-size-base * 1.5);
+	padding: 0 0 .5em;
+	margin-bottom: 0;
+	.font-size(1.2);
 	line-height: inherit;
-	color: @legend-color;
+	color: @muted-text-color;
 	border: 0;
-	border-bottom: 1px solid @legend-border-color;
+	font-style: italic;
+	border-bottom: 1px solid @separator-color;
 }
 
 label {
@@ -123,7 +124,8 @@ output {
 // input[type="tel"]
 // input[type="color"]
 
-.form-control {
+.form-control,
+.input-text {
 	display: block;
 	width: 100%;
 	padding: 8px 12px;

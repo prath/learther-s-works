@@ -20,6 +20,8 @@ require_once('widgets/ae.php');
 require_once('parts/page-title.php');
 // requires Breadcrumbs
 require_once('parts/breadcrumbs.php');
+// requires Message - used for flash messages
+// require_once('parts/message.php');
 
 
 ?>
@@ -45,7 +47,7 @@ require_once('parts/breadcrumbs.php');
 			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 		<![endif]-->
 
-		<header class="header">
+		<header class="header" role="banner">
 
 			<h1 class="sr-only">Leather's Works</h1>
 
@@ -127,7 +129,7 @@ require_once('parts/breadcrumbs.php');
 			 */
 		?>
 		<?php
-		include 'parts/menu.php';
+			include 'parts/menu.php';
 		?>
 
 		<?php
@@ -139,4 +141,14 @@ require_once('parts/breadcrumbs.php');
 			<?php widget_shopping_cart('Shopping Cart.');?>
 		</aside>
 
+		<section id="main">
 
+			<?php
+				/**
+				 * Header BG
+				 */
+			?>
+			<?php
+				include 'parts/hero-inner.php';
+				hero_inner();
+			?>

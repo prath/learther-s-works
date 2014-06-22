@@ -312,9 +312,8 @@ ul.blog-entries {
 .blog-entry {
 	.font-size(1.4);
 	line-height: 1.785;
-	border-bottom: 1px solid @separator-color;
 	padding-bottom: 1em;
-	margin-bottom: 3.57em;
+	// margin-bottom: 3.57em;
 
 	&.format-status,
 	&.format-link,
@@ -409,9 +408,11 @@ header {
 ============================================================*/
 .bottom-meta {
 	.clearfix();
+	padding-top: 4.167em;
 	padding-bottom: 4.167em;
 	margin-bottom: 4.167em;
 	border-bottom: 1px solid @separator-color;
+	border-top: 1px solid @separator-color;
 }
 
 .author-meta {
@@ -457,60 +458,4 @@ header {
 	float: right;
 	width: 35%;
 	padding-left: 4.167em;
-}
-
-/* [Two Column Content Holders]
-============================================================*/
-
-.two-cols-panel {
-	.clearfix();
-	position: relative;
-	padding-bottom: 4.167em;
-	margin-bottom: 4.167em;
-	border-bottom: 1px solid @separator-color;
-
-	.section-title {
-		margin-bottom: 0;
-		margin-top: 0;
-	}
-	.left-panel {
-		width: 16.667em;
-		position: absolute;
-		top: 0;
-		left: 0;
-		.left-item {
-			.clearfix();
-			padding-bottom: 1em;
-			padding-top: 1em;
-			&.bordered {
-				border-bottom: 1px solid @separator-color;
-			}
-		}
-		.btn-diamond-secondary {
-			margin-top: 1em;
-		}
-	}
-	.right-panel {
-		margin-left: 16.667em;
-		padding-left: 4.167em;
-		padding-bottom: 2.5em;
-		border-left: 1px solid @separator-color;
-		min-height: 10em;
-
-		.comment-form {
-			margin-top: 0;
-			padding-top: 2.5em;
-		}
-	}
-
-	&:last-child {
-		margin-bottom: 0;
-		padding-bottom: 0;
-		border-bottom: 0;
-	}
-}
-
-.google-map {
-	height: 30em;
-	margin-bottom: 3.57em;
 }

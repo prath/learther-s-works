@@ -75,6 +75,17 @@ small {
 	.sidebar {
 		padding-left: 50px;
 		padding-right: 50px;
+
+		&:before {
+			content: '';
+			width: 1px;
+			height: 100%;
+			background: @separator-color;
+			display: block;
+			position: absolute;
+			left: -1px;
+			top: 0;
+		}
 	}
 }
 
@@ -162,7 +173,57 @@ ul.three-cols {
 
 .w-sidebar-full {
 	border-right: 1px solid @separator-color;
-	// padding-right: 10px !important;
+}
+
+/*-----[Two Column Content Holders]-----*/
+
+.two-cols-panel {
+	.clearfix();
+	position: relative;
+	padding-bottom: 4.167em;
+	margin-bottom: 4.167em;
+	border-bottom: 1px solid @separator-color;
+	.font-size(1.2);
+
+	.section-title {
+		margin-bottom: 0;
+		margin-top: 0;
+	}
+	.left-panel {
+		width: 16.667em;
+		position: absolute;
+		top: 0;
+		left: 0;
+		.left-item {
+			.clearfix();
+			padding-bottom: 1em;
+			padding-top: 1em;
+			&.bordered {
+				border-bottom: 1px solid @separator-color;
+			}
+		}
+		.btn-diamond-secondary {
+			margin-top: 1em;
+		}
+	}
+	.right-panel {
+		margin-left: 16.667em;
+		padding-left: 4.167em;
+		padding-bottom: 2.5em;
+		border-left: 1px solid @separator-color;
+		min-height: 10em;
+
+		.comment-form {
+			margin-top: 0;
+			padding-top: 2.5em;
+		}
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+		padding-bottom: 0;
+		border-bottom: 0;
+	}
 }
 
 /* [Helper Classes]

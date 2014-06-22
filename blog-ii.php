@@ -10,60 +10,39 @@
 include 'header.php';
 ?>
 
-<main role="main">
-
 	<?php
 		/**
-		 * Header BG
+		 * loc : parts/page-title.php
+		 *
+		 * ini nantinya akan ada di header.php
 		 */
-	?>
-	<?php
-	include 'parts/hero-inner.php';
-	hero_inner();
+		page_title('Blog', '', 'Blog');
 	?>
 
-	<?php
-		/**
-		 * Page title, Breadcrumbs and Title Separator
-		 */
-	?>
-	<?php
-	page_title('Blog', '', 'Blog');
-	?>
 
-	<?php
-		/**
-		 * Main Content
-		 */
-	?>
-	<div class="container main-content wrapper-narrow">
+	<?php //--- wrapper-start default template ?>
+	<div class="container main-content">
+		<div class="wrapper-narrow">
+	<?php //--- wrapper-start ?>
 
-		<?php
-			/**
-			 * Product List including Pagination and Filter
-			 */
-		?>
-		<?php include 'blogs/blog-entries-standard.php'; ?>
+			<?php
+				/**
+				 * Standard Blog List
+				 */
+			?>
+			<?php include 'page-templates/blog-entries-standard.php'; ?>
 
-		<?php
-			/**
-			 * Pagination
-			 */
-		?>
-		<?php include 'parts/pagination.php'; ?>
+			<?php
+				/**
+				 * Pagination
+				 */
+			?>
+			<?php include 'woocommerce/loop/pagination.php'; ?>
 
+	<?php //--- wrapper-end default template ?>
+		</div>
 	</div>
-
-	<?php
-		/**
-		 * Email Subscribe
-		 */
-	?>
-	<div class="container">
-		<?php include 'parts/email-subscribe.php'; ?>
-	</div>
-
-</main>
+	<?php //--- wrapper-end ?>
 
 <?php
 include 'footer.php';

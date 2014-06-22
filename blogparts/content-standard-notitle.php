@@ -8,7 +8,7 @@
  */
 ?>
 
-<article class="format-standard blog-entry">
+<div class="format-standard blog-entry">
 
 	<header>
 		<div class="entry-meta">
@@ -34,4 +34,4 @@
 			Read More<span class="diamond-icon"><i class="dripicon dripicon-chevron-right"></i></span>
 		</a>
 	</div>
-</article>
+</div>

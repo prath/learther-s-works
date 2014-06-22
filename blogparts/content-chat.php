@@ -8,7 +8,7 @@
  */
 ?>
 
-<article class="format-chat blog-entry">
+<div class="format-chat blog-entry">
 
 	<header>
 		<div class="entry-meta">
@@ -43,5 +43,5 @@
 			Read More<span class="diamond-icon"><i class="dripicon dripicon-chevron-right"></i></span>
 		</a>
 	</div>
-</article>
+</div>
 

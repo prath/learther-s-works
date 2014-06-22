@@ -10,25 +10,13 @@
 include 'header.php';
 ?>
 
-<main role="main">
-
 	<?php
 		/**
-		 * Header BG
+		 * loc : parts/page-title.php
+		 *
+		 * ini nantinya akan ada di header.php
 		 */
-	?>
-	<?php
-	include 'parts/hero-inner.php';
-	hero_inner();
-	?>
-
-	<?php
-		/**
-		 * Page title, Breadcrumbs and Title Separator
-		 */
-	?>
-	<?php
-	page_title_blog('An Introduction to WooCommerce.', 'Blog', 'An Introduction to WooCommerce.');
+		page_title_blog('An Introduction to WooCommerce.', 'Blog', 'An Introduction to WooCommerce.');
 	?>
 
 	<?php
@@ -36,34 +24,26 @@ include 'header.php';
 		 * Next-Prev Item Paging
 		 */
 	?>
-	<?php include 'parts/paging.php'; ?>
-
 	<?php
-		/**
-		 * Main Content
-		 */
+		include 'parts/paging.php';
 	?>
-	<div class="container main-content wrapper-narrow">
 
-		<?php
-			/**
-			 * Product List including Pagination and Filter
-			 */
-		?>
-		<?php include 'singlepages/blog-single.php'; ?>
+	<?php //--- wrapper-start default template ?>
+	<div class="container main-content">
+		<div class="wrapper-narrow">
+	<?php //--- wrapper-start ?>
 
+			<?php
+				/**
+				 * Single Page Template
+				 */
+			?>
+			<?php include 'page-templates/blog-single.php'; ?>
+
+	<?php //--- wrapper-end default template ?>
+		</div>
 	</div>
-
-	<?php
-		/**
-		 * Email Subscribe
-		 */
-	?>
-	<div class="container">
-		<?php include 'parts/email-subscribe.php'; ?>
-	</div>
-
-</main>
+	<?php //--- wrapper-end ?>
 
 <?php
 include 'footer.php';

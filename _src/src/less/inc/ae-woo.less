@@ -8,6 +8,10 @@
 // * @author Pratama H. Salahudin <pratama@aestik.com>
 // -----------------------------------------------------------------
 
+.woocommerce {
+	.font-size(1.2);
+}
+
 /* [Products]
 ============================================================*/
 
@@ -441,6 +445,8 @@ ul.products li.product a .star-rating,
 
 	.variations {
 		width: 100%;
+
+		margin-bottom: 0;
 		.label {
 			width: 10em;
 		}
@@ -451,6 +457,11 @@ ul.products li.product a .star-rating,
 				display:block;
 				margin-top: .5em;
 			}
+		}
+
+		tr > td {
+			padding: 0;
+			border-bottom: 0;
 		}
 	}
 
@@ -567,4 +578,67 @@ table.cart {
 .attachment-shop_thumbnail {
 	height: 3em;
 	width: 3em;
+}
+
+/*-----[Flash Messages]-----*/
+.woocommerce-message,
+.woocommerce-error,
+.woocommerce-info {
+	margin-bottom: 1px;
+	padding: 2em;
+	font-weight: 700;
+	border-left: 1px solid @default-accent;
+}
+.woocommerce-message {
+	border-left-color: darken(@code-msg, 50%);
+	background-color: @code-msg;
+	a {
+		color: darken(@code-msg, 40%);
+	}
+}
+
+.woocommerce-info {
+	border-left-color: darken(@code-info, 50%);
+	background-color: @code-info;
+	a {
+		color: darken(@code-info, 40%);
+	}
+}
+
+.woocommerce-error {
+	border-left-color: darken(@code-danger, 50%);
+	background-color: @code-danger;
+	a {
+		color: darken(@code-danger, 40%);
+	}
+}
+
+.woocommerce {
+	.login {
+		.rememberme {
+			display: block;
+		}
+
+		.btn {
+			display: block;
+			width: 100%;
+		}
+	}
+
+	.form-row {
+		.clearfix();
+	}
+	.clear {
+		.clearfix();
+	}
+
+	.checkbox,
+	.radio {
+		display: inline;
+		padding-left: 0;
+	}
+
+	div.create-account {
+		padding: 2.1em 10%;
+	}
 }

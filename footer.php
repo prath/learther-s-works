@@ -7,6 +7,18 @@
  * @since  0.1.0
  */
 ?>
+
+			<?php
+				/**
+				 * Email Subscribe
+				 */
+			?>
+			<div class="container">
+				<?php include 'parts/email-subscribe.php'; ?>
+			</div>
+
+		</section>
+
 		<footer class="container wrapper">
 
 			<?php

@@ -8,7 +8,7 @@
  */
 ?>
 
-<article class="format-video blog-entry">
+<div class="format-video blog-entry">
 
 	<p class="fitvids">
 		<iframe src="//player.vimeo.com/video/27127177" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
@@ -38,4 +38,4 @@
 			Read More<span class="diamond-icon"><i class="dripicon dripicon-chevron-right"></i></span>
 		</a>
 	</div>
-</article>
+</div>
