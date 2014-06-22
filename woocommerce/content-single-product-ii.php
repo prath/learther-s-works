@@ -13,7 +13,7 @@
 			<div class="wrapper">
 				<div class="row-stretched">
 
-					<div class="col-md-9 w-sidebar">
+					<div class="col-md-9 w-rsidebar">
 						<?php //include 'woocommerce/loop/sale-flash.php';?>
 						<?php include 'woocommerce/single-product/product-image.php';?>
 

@@ -332,16 +332,36 @@ hr
 }
 /* [Global Containers]
 ============================================================*/
-.container .sidebar
+.container .rsidebar
 {
     padding-right: 50px;
     padding-left: 50px;
 }
-.container .sidebar:before
+.container .rsidebar:before
 {
     position: absolute;
     top: 0;
     left: -1px;
+
+    display: block;
+
+    width: 1px;
+    height: 100%;
+
+    content: '';
+
+    background: #ccc;
+}
+.container .lsidebar
+{
+    padding-right: 50px;
+    padding-left: 50px;
+}
+.container .lsidebar:before
+{
+    position: absolute;
+    top: 0;
+    right: -1px;
 
     display: block;
 
@@ -521,15 +541,25 @@ ul.three-cols li:nth-child(3n+3):before
 {
     background-color: transparent;
 }
-.w-sidebar
+.w-rsidebar
 {
     padding-right: 4.166em !important;
 
     border-right: 1px solid #ccc;
 }
-.w-sidebar-full
+.w-rsidebar-full
 {
     border-right: 1px solid #ccc;
+}
+.w-lsidebar
+{
+    padding-left: 4.166em !important;
+
+    border-left: 1px solid #ccc;
+}
+.w-lsidebar-full
+{
+    border-left: 1px solid #ccc;
 }
 /*-----[Two Column Content Holders]-----*/
 .two-cols-panel

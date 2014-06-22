@@ -20,7 +20,7 @@ include 'woocommerce/global/wrapper-start.php'; ?>
 	<div class="container main-content">
 
 		<div class="row">
-			<div class="col-md-9 w-sidebar-full">
+			<div class="col-md-9 w-rsidebar-full">
 
 				<?php
 					include 'woocommerce/loop/result-count.php';

@@ -34,7 +34,7 @@ include 'header.php';
 	<?php //--- wrapper-start ?>
 
 			<div class="row-stretched">
-				<div class="col-md-9 w-sidebar">
+				<div class="col-md-9 w-rsidebar">
 
 					<?php
 						/**
@@ -44,7 +44,7 @@ include 'header.php';
 					<?php include 'page-templates/blog-single.php'; ?>
 
 				</div>
-				<aside class="col-md-3 sidebar">
+				<aside class="col-md-3 rsidebar">
 					<?php widget_nav_menu();?>
 					<?php widget_popular_posts();?>
 					<?php widget_tags();?>

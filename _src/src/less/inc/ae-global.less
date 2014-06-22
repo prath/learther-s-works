@@ -72,7 +72,7 @@ small {
 ============================================================*/
 
 .container {
-	.sidebar {
+	.rsidebar {
 		padding-left: 50px;
 		padding-right: 50px;
 
@@ -84,6 +84,21 @@ small {
 			display: block;
 			position: absolute;
 			left: -1px;
+			top: 0;
+		}
+	}
+	.lsidebar {
+		padding-left: 50px;
+		padding-right: 50px;
+
+		&:before {
+			content: '';
+			width: 1px;
+			height: 100%;
+			background: @separator-color;
+			display: block;
+			position: absolute;
+			right: -1px;
 			top: 0;
 		}
 	}
@@ -166,13 +181,22 @@ ul.three-cols {
 	}
 }
 
-.w-sidebar {
+.w-rsidebar {
 	border-right: 1px solid @separator-color;
 	padding-right: 4.166em !important;
 }
 
-.w-sidebar-full {
+.w-rsidebar-full {
 	border-right: 1px solid @separator-color;
+}
+
+.w-lsidebar {
+	border-left: 1px solid @separator-color;
+	padding-left: 4.166em !important;
+}
+
+.w-lsidebar-full {
+	border-left: 1px solid @separator-color;
 }
 
 /*-----[Two Column Content Holders]-----*/

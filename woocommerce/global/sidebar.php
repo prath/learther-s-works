@@ -8,7 +8,7 @@
  */
 ?>
 
-<aside class="col-md-3 sidebar">
+<aside class="col-md-3 rsidebar">
 	<?php widget_product_categories();?>
 	<?php widget_shopping_cart();?>
 	<?php widget_featured_products();?>
