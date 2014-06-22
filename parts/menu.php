@@ -54,7 +54,8 @@
 			<ul class="submenu">
 				<li><a href="blog-ii.php" title="">Blog Alt</a></li>
 				<li><a href="blog-single-i.php" title="">Single Blog</a></li>
-				<li><a href="blog-single-ii.php" title="">Single Blog Alt</a></li>
+				<li><a href="blog-single-ii.php" title="">Single Blog Alt 1</a></li>
+				<li><a href="blog-single-iii.php" title="">Single Blog Alt 2</a></li>
 			</ul>
 		</li>
 		<li>
