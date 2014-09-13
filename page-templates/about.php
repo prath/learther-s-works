@@ -17,7 +17,9 @@
 	<div class="VC-SPAN">
 		<div class="VC-WRAPPER">
 
-			<?php include 'composer-elements/text-entry.php'; ?>
+			<div class="wrapper-narrow">
+				<?php include 'composer-elements/text-entry.php'; ?>
+			</div>
 
 		</div>
 	</div>
@@ -32,7 +34,9 @@
 	<div class="VC-SPAN">
 		<div class="VC-WRAPPER">
 
-			<?php include 'composer-elements/store-location.php'; ?>
+			<div class="wrapper-narrow">
+				<?php include 'composer-elements/store-location.php'; ?>
+			</div>
 
 		</div>
 	</div>

@@ -8,7 +8,7 @@
  */
 ?>
 
-<div class="format-chat blog-entry">
+<div class="format-chat blog-entry blog-entry-excerpt">
 
 	<header>
 		<div class="entry-meta">

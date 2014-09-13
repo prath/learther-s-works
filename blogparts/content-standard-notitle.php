@@ -8,7 +8,7 @@
  */
 ?>
 
-<div class="format-standard blog-entry">
+<div class="format-standard blog-entry blog-entry-excerpt">
 
 	<header>
 		<div class="entry-meta">

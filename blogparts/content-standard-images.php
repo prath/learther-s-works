@@ -8,7 +8,7 @@
  */
 ?>
 
-<div class="format-standard blog-entry">
+<div class="format-standard blog-entry blog-entry-excerpt">
 
 	<img class="featured-image" src="assets/front/dummy-images/blog/med1.jpg" alt="">
 

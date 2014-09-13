@@ -24,7 +24,7 @@ var gulp = require('gulp'),
 	less = require('gulp-less'),
 	jshint = require('gulp-jshint'),
 	prefix = require('gulp-autoprefixer'),
-	clean = require('gulp-clean'),
+	clean = require('gulp-rimraf'),
 	livereload = require('gulp-livereload'),
 	path = require('path'),
 	es = require('event-stream'),
@@ -38,9 +38,9 @@ var gulp = require('gulp'),
 	csscomb = require('gulp-csscomb'),
 	jscs = require('gulp-jscs'),
 	csslint = require("gulp-csslint"),
-	fs = require('fs'),
-	finder = require('findit'),
-	find = finder('../includes');
+	fs = require('fs');
+	// finder = require('findit'),
+	// find = finder('../includes');
 
 /**
  * [Tasks]

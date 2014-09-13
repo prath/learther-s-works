@@ -42,6 +42,21 @@ include 'header-home.php';
 
 		<?php
 			/**
+			 * VC ELEMENT - LEAD
+			 */
+		?>
+		<!-- <div class="VC-ROW">
+			<div class="VC-SPAN">
+				<div class="VC-WRAPPER">
+
+					<?php //include 'composer-elements/lead.php'; ?>
+
+				</div>
+			</div>
+		</div> -->
+
+		<?php
+			/**
 			 * VC ELEMENT - WOO RECENT PRODUCTS
 			 */
 		?>

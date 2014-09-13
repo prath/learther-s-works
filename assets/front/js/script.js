@@ -37,6 +37,10 @@
 			$('.fitvids').fitVids();
 		}
 
+		if ($('.accordion').length) {
+			$('.accordion').accordion();
+		}
+
 		/**
 		 * Toggle Search Form on icon clicked
 		 */

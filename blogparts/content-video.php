@@ -8,10 +8,10 @@
  */
 ?>
 
-<div class="format-video blog-entry">
+<div class="format-video blog-entry blog-entry-excerpt">
 
 	<p class="fitvids">
-		<iframe src="//player.vimeo.com/video/27127177" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+		<iframe width="560" height="315" src="//www.youtube.com/embed/6v2L2UGZJAM" frameborder="0" allowfullscreen></iframe>
 	</p>
 
 	<header>

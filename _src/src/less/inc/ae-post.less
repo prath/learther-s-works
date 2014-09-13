@@ -300,6 +300,18 @@
 
 ul.blog-entries {
 	list-style: none;
+	li:first-child {
+		.blog-entry-excerpt {
+			border-top: 0;
+			padding-top: 0;
+		}
+	}
+	li:last-child {
+		.blog-entry-excerpt {
+			border-bottom: 1px solid @separator-color;
+			margin-bottom: 1em;
+		}
+	}
 }
 
 .blog-entries {
@@ -352,14 +364,20 @@ ul.blog-entries {
 		}
 	}
 	img {
-		margin-bottom: 3.57em;
+		margin-bottom: 2em;
 		&:last-child {
 			margin-bottom: 0;
 		}
 	}
 
 	* + img {
-		margin-top: 3.57em;
+		margin-top: 2em;
+	}
+
+	&-excerpt {
+		padding-bottom: 4em;
+		padding-top: 4em;
+		border-top: 1px solid @separator-color;
 	}
 
 }
@@ -367,7 +385,7 @@ ul.blog-entries {
 .featured-image,
 .fitvids {
 	width: 100%;
-	margin-bottom: 3.57em;
+	margin-bottom: 2em;
 }
 
 header {

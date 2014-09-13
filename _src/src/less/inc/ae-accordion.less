@@ -1,0 +1,35 @@
+// -----------------------------------------------------------------
+// * [Accordion Content Styles]
+// *
+// * @project Leather's Works Wordpress Theme
+// * @version 1.0.0
+// *
+// * @author Dwi A. Hambali <dwi@aestik.com>
+// * @author Pratama H. Salahudin <pratama@aestik.com>
+// -----------------------------------------------------------------
+
+/* [Accordion]
+==================================================*/
+.accordion {
+	&-item {
+
+		padding: 1em 0;
+
+		&-heading {
+
+			.font-size(1);
+			cursor: pointer;
+			margin-bottom: 1em;
+			margin-top: 1em;
+			color: @heading-color;
+			// text-transform: none;
+
+			&:focus {
+				outline: none;
+			}
+			&.ui-accordion-header-active {
+				color: @section-title-color;
+			}
+		}
+	}
+}
